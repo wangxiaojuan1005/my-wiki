@@ -6,9 +6,9 @@
 
 body {
   margin: 0;
-  background: #eef3ff;
+  background: #f4f6f9;
   font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-  color: #1f2b5a;
+  color: #1a2530; /* McKinsey deep charcoal grey for text sharpness */
 }
 
 .ppt {
@@ -16,8 +16,9 @@ body {
   max-width: 1920px;
   min-height: 100vh;
   margin: 0 auto;
-  position: relative;
-  background: radial-gradient(circle at top left, #ffffff 0%, #f7faff 35%, #eef3ff 100%);
+  position: sticky;
+  top: 0;
+  background: #f4f6f9; /* Clean light gray corporate presentation background */
 }
 
 /* 顶部导航 */
@@ -28,106 +29,116 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 42px;
-  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
-  border-bottom: 2px solid #dfe7ff;
-  box-shadow: 0 6px 24px rgba(41, 73, 183, 0.05);
-  position: relative;
-  z-index: 10;
+  background: #ffffff;
+  border-bottom: 3px solid #003A70; /* McKinsey Navy line */
+  box-shadow: 0 4px 16px rgba(0, 58, 112, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 /* logo */
 .logo {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 
 .logo h1 {
   margin: 0;
-  font-size: 24px;
-  color: #163ac0;
+  font-size: 22px;
+  color: #003A70; /* McKinsey Navy Blue */
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .logo p {
   margin: 0;
-  font-size: 12px;
-  color: #6b7aa7;
+  font-size: 11px;
+  color: #4B779A; /* McKinsey Steel Blue */
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* tabs */
 .tabs {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .tab {
-  min-width: 145px;
-  padding: 0 16px;
-  height: 44px;
-  border-radius: 18px;
-  border: 2px solid #dce5ff;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  min-width: 135px;
+  padding: 0 14px;
+  height: 40px;
+  border-radius: 6px; /* Sleeker, square-ish rounded corners for professional reports */
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   cursor: pointer;
-  transition: .22s;
-  color: #3f548f;
-  position: relative;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  color: #344054;
+  position: sticky;
+  top: 0;
   overflow: hidden;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
 }
 
 .tab:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(41, 73, 183, 0.10);
+  transform: translateY(-1px);
+  background: #f8fafc;
+  border-color: #4B779A;
+  color: #003A70;
 }
 
 .tab.active {
-  background: linear-gradient(135deg, #2d63ff 0%, #5f8dff 100%);
-  border-color: #2d63ff;
-  color: #fff;
-  box-shadow: 0 12px 24px rgba(41, 73, 183, 0.22);
+  background: #003A70; /* McKinsey Navy Blue on active */
+  border-color: #003A70;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 58, 112, 0.15);
 }
 
 .tab.active::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, .22), transparent 55%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #AE2F23; /* Chevron/accent rust-red bar on active */
 }
 
 .tab .num {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
-  font-weight: 900;
-  background: rgba(45, 99, 255, .10);
-  color: #2d63ff;
+  font-size: 12px;
+  font-weight: 800;
+  background: #f2f4f7;
+  color: #475467;
 }
 
 .tab.active .num {
-  background: rgba(255, 255, 255, .20);
-  color: #fff;
+  background: #AE2F23; /* McKinsey Accent Red for active number */
+  color: #ffffff;
 }
 
 .tab span {
-  font-size: 16px;
-  font-weight: 900;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /* 内容区域 */
 .content {
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 /* 页面 */
@@ -171,7 +182,8 @@ body {
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(255, 255, 255, .96) 0%, rgba(247, 250, 255, .96) 100%);
   border: 2px solid #dfe7ff;
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
   box-shadow: 0 8px 28px rgba(41, 73, 183, .06);
 }
@@ -200,7 +212,8 @@ body {
 }
 
 .hero-inner {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 2;
   width: 100%;
   display: flex;
@@ -313,6 +326,19 @@ body {
   font-size: 16px;
   color: #394b87;
   font-weight: 700;
+}
+
+/* SlideProject1 top cards — matches .proj-1 .top-card */
+.s1-page .s1-top-card .s1-num {
+  font-size: 28px !important;
+  color: #2449d8 !important;
+  font-weight: 900 !important;
+}
+.s1-page .s1-top-card .s1-label {
+  margin-top: 6px !important;
+  font-size: 16px !important;
+  color: #394b87 !important;
+  font-weight: 700 !important;
 }
 
 .proj-1 .section {
@@ -535,13 +561,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-1 .loop-box {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-1 .circle {
@@ -671,7 +699,8 @@ body {
 }
 
 .proj-1 .center-map {
-  position: relative;
+  position: sticky;
+  top: 0;
   min-height: 520px;
 }
 
@@ -766,7 +795,8 @@ body {
 }
 
 .proj-1 .pyramid {
-  position: relative;
+  position: sticky;
+  top: 0;
   height: 460px;
   display: flex;
   flex-direction: column;
@@ -898,7 +928,8 @@ body {
 }
 
 .proj-1 .left-col {
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-1 .left-col:first-child {
@@ -1065,7 +1096,8 @@ body {
   border: 2px solid #dfe7ff;
   border-radius: 20px;
   padding: 18px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-1 .s2-panel-title {
@@ -1486,7 +1518,8 @@ body {
   border-radius: 16px;
   padding: 20px 22px;
   min-height: 270px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-1 .pain-card.pain-red {
@@ -1617,7 +1650,8 @@ body {
   background: #fff;
   border-radius: 16px;
   border: 2px dashed #d6e2ff;
-  position: relative;
+  position: sticky;
+  top: 0;
   padding: 16px 14px;
   overflow: hidden;
 }
@@ -1631,7 +1665,8 @@ body {
 }
 
 .proj-1 .pain-loop-area {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 380px;
   height: 260px;
   margin: -12px auto 0;
@@ -1725,7 +1760,8 @@ body {
   border: 1px solid #dfe8f6;
   border-radius: 16px;
   padding: 16px;
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
 }
 
@@ -1744,7 +1780,8 @@ body {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  position: relative;
+  position: sticky;
+  top: 0;
   background: #fbfdff;
 }
 
@@ -1784,7 +1821,8 @@ body {
   height: 20px;
   background: #c7d8ff;
   margin: 0 auto;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-1 .step-line:after {
@@ -1807,7 +1845,8 @@ body {
 }
 
 .proj-1 .s3-level {
-  position: relative;
+  position: sticky;
+  top: 0;
   margin: 0 auto 18px;
   width: 100%;
   padding: 18px 24px;
@@ -2163,7 +2202,8 @@ body {
 }
 
 .proj-1 .flow-diagram {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 280px;
   margin: 0 auto;
@@ -2541,7 +2581,8 @@ body {
   padding: 24px;
   background: linear-gradient(180deg, #ffffff, #f5f8ff);
   border: 2px solid #dce6ff;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-2 .step-card .num {
@@ -2718,7 +2759,8 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), 0 2px 8px rgba(58, 92, 199, .04);
   padding: 12px 14px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-2 .cross {
@@ -2862,7 +2904,8 @@ body {
   border-radius: 24px;
   background: linear-gradient(180deg, #ffffff, #f5f8ff);
   border: 2px solid #dce5ff;
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
   padding: 20px;
 }
@@ -2933,7 +2976,8 @@ body {
   background: linear-gradient(180deg, #fff, #f5f8ff);
   border: 2px solid #dce5ff;
   padding: 16px;
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
 }
 
@@ -2966,7 +3010,8 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .95), 0 2px 10px rgba(50, 82, 190, .05);
   padding: 10px 18px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-2 .pk-title {
@@ -3405,7 +3450,8 @@ body {
 .proj-3 .bar {
   width: 42px;
   border-radius: 12px 12px 0 0;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .proj-3 .bar.gray {
@@ -3505,7 +3551,8 @@ body {
   border-radius: 12px;
   background: linear-gradient(to bottom, #ffffff, #f3f7ff);
   border: 1px solid #d7e2ff;
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
 }
 
@@ -3656,7 +3703,8 @@ body {
   height: 2px;
   background: #ff6a6a;
   margin: 0 16px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .legacy-diagnose .title-line::after {
@@ -3694,7 +3742,8 @@ body {
   border-radius: 22px;
   border: 2px solid #d6d6d6;
   padding: 16px 18px 14px;
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -3779,7 +3828,8 @@ body {
   padding: 16px;
   border: 1.8px solid #b7cfff;
   min-height: 255px;
-  position: relative;
+  position: sticky;
+  top: 0;
   background: #fff;
 }
 
@@ -3811,7 +3861,7 @@ body {
   right: 22px;
   top: 6px;
   background: #fff;
-  z-index: 10;
+  z-index: 100;
 }
 
 .legacy-diagnose .bubble::after {
@@ -3849,7 +3899,8 @@ body {
   height: 34px;
   border-radius: 50%;
   background: linear-gradient(#70a9ff,#4d8dff);
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .legacy-diagnose .user::after {
@@ -3900,7 +3951,8 @@ body {
   overflow: visible;
   border: 1.5px solid var(--mck-blue-border);
   background: #fff;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .legacy-diagnose .table-title {
@@ -3946,7 +3998,8 @@ body {
   font-size: 18px;
   font-weight: 900;
   margin-top: 10px;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .legacy-diagnose .knowledge-title {
@@ -3969,7 +4022,8 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: var(--mck-navy);
-  position: relative;
+  position: sticky;
+  top: 0;
   top: 0px;
 }
 
@@ -4037,7 +4091,8 @@ body {
   height: 34px;
   border-radius: 50%;
   background: #9ca3af;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .legacy-diagnose .member::after {
@@ -4084,7 +4139,8 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 700;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .legacy-diagnose .speech::before {

@@ -22,8 +22,8 @@ export default function App() {
 
   const slides = [
     { id: "personal", label: "个人综述", component: SlidePersonal },
-    { id: "proj1", label: "项目一：新业务破局", component: SlideProject1 },
-    { id: "proj2", label: "项目二：AI效能", component: SlideProject2 },
+    { id: "proj1", label: "项目一：融合云&AgentOps业务", component: SlideProject1 },
+    { id: "proj2", label: "项目二：LIVIS新业务", component: SlideProject2 },
     { id: "proj3", label: "项目三：AI生态", component: SlideProject3 },
     { id: "future", label: "未来规划", component: SlideFuture },
     { id: "end", label: "结束页", component: SlideEnd },
@@ -97,8 +97,8 @@ export default function App() {
       {/* 顶部导航 (Top-Nav Bar matching index.css exactly) */}
       <div className="top-nav">
         <div className="logo">
-          <h1>晋升答辩框架</h1>
-          <p>LIVIS 理想同学 Quality Engineering &middot; AI Driven Testing</p>
+          <h1>王晓娟晋升答辩</h1>
+          {/* <p>LIVIS 理想同学 Quality Engineering &middot; AI Driven Testing</p> */}
         </div>
 
         {/* Dynamic Presentation Slide Tabs */}
@@ -166,8 +166,9 @@ export default function App() {
         style={{ pointerEvents: "none" }}
       >
         <i className="fa-solid fa-keyboard text-amber-300 animate-pulse" />
-        <span>提示：支持键盘左右方向键 (← / →) 或鼠标、触屏划拽切换 PPT！</span>
+        <span>提示：支持键盘左右方向键（← / →）或滑标、触屏滑动切换PPT！</span>
       </div>
     </div>
   );
 }
+

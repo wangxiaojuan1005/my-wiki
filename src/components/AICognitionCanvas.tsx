@@ -195,14 +195,14 @@ export default function AICognitionCanvas() {
           {/* 历史 */}
           <line x1="1014" y1="95" x2="1014" y2="115" className="solid" markerEnd="url(#arrow)" />
 
-          {/* AI 提取到菱形 */}
+          {/* AI 提取到交叉验证 */}
           <path d="M680 180 Q720 230 790 300" className="solid" markerEnd="url(#arrow)" />
           <path d="M1018 180 Q980 230 900 300" className="solid" markerEnd="url(#arrow)" />
 
-          {/* 菱形到保留 */}
+          {/* 交叉验证到保留 */}
           <path d="M805 440 Q790 480 790 520" className="solid" markerEnd="url(#arrow)" />
 
-          {/* 菱形到补充 */}
+          {/* 交叉验证到补充 */}
           <path d="M925 440 Q950 480 950 520" className="solid" markerEnd="url(#arrow)" />
 
           {/* AI skill */}
@@ -229,53 +229,53 @@ export default function AICognitionCanvas() {
         {/* 顶部 */}
         <div className="node" style={{ left: 560, top: 10, width: 230, height: 85 }}>
           📄 PRD 文档<br />
-          「应该测什么」
+          「应该测试什么」
         </div>
 
         <div className="node" style={{ left: 888, top: 10, width: 250, height: 85 }}>
-          📋 历史测试用例<br />
-          「过去测了什么」
+          📓 历史测试用例<br />
+          「过去测试了什么」
         </div>
 
         {/* AI 节点 */}
         <div className="node small" style={{ left: 560, top: 115, width: 260, height: 65 }}>
-          🤖 AI 批量提取功能点
+          🧠 AI 提炼提取功能点
         </div>
 
         <div className="node small" style={{ left: 888, top: 115, width: 260, height: 65 }}>
-          🤖 AI 汇总测试场景
+          🧠 AI 聚合测试场景
         </div>
 
-        {/* 菱形 */}
+        {/* 交叉 */}
         <div className="diamond" style={{ left: 773, top: 255 }}>
           <div className="diamond-text">
-            🔍 交叉验证<br />
-            差异分析
+            🔄 交叉验证<br />
+            差异度分析
           </div>
         </div>
 
         {/* 标签 */}
         <div className="label" style={{ left: 635, top: 455 }}>
-          交集 → 有效用例
+          交集 ➔ 有效用例
         </div>
 
         <div className="label" style={{ left: 875, top: 455 }}>
-          差集 → 覆盖盲区
+          差集 ➔ 遗漏场景
         </div>
 
         {/* 保留 */}
         <div className="node green" style={{ left: 690, top: 520, width: 120, height: 68 }}>
-          ✅ 保留
+          ✓ 保留
         </div>
 
         {/* 补充 */}
         <div className="node pink" style={{ left: 908, top: 520, width: 128, height: 68 }}>
-          ⚠️ 补充
+          ⚠ 补充
         </div>
 
         {/* 左侧 */}
         <div className="node" style={{ left: 10, top: 290, width: 238, height: 62 }}>
-          💻 前端代码仓库
+          💾 前端代码仓库
         </div>
 
         <div className="node" style={{ left: 310, top: 290, width: 278, height: 62 }}>
@@ -283,45 +283,45 @@ export default function AICognitionCanvas() {
         </div>
 
         <div className="node" style={{ left: 42, top: 505, width: 175, height: 85 }}>
-          🤖 AI Skill<br />
-          静态分析
+          🧠 AI Skill<br />
+          静态代码分析
         </div>
 
         <div className="node" style={{ left: 318, top: 505, width: 262, height: 85 }}>
-          🤖 AI 归类分析<br />
-          → 风险模块热力图
+          🧠 AI 归类分析<br />
+          ➔ 风险模型拐点图
         </div>
 
         {/* 人工 */}
         <div className="node" style={{ left: 1100, top: 505, width: 232, height: 85 }}>
-          👤 人工评审兜底<br />
+          👥 人工评审兜底<br />
           避免 AI 幻觉
         </div>
 
         {/* 中间 */}
         <div className="node center-box" style={{ left: 560, top: 660, width: 350, height: 98 }}>
           🎯 最终测试用例矩阵<br />
-          功能全貌 × 质量风险<br />
-          × 用户痛点
+          功能覆盖 ⊗ 质量风险<br />
+          ⊗ 用户痛点
         </div>
 
         {/* 底部 */}
         <div className="node" style={{ left: 160, top: 815, width: 295, height: 90 }}>
-          🧪 测试用例矩阵<br />
+          📦 测试用例矩阵<br />
           P0/P1/P2 三级<br />
           7 大业务模块全覆盖
         </div>
 
         <div className="node" style={{ left: 545, top: 815, width: 270, height: 90 }}>
-          📢 10 场业务分享会<br />
-          反向验证 + 补充认知<br />
+          💾 10 场业务分享会<br />
+          反馈验证 + 补充认知<br />
           形成团队共识
         </div>
 
         <div className="node" style={{ left: 930, top: 815, width: 305, height: 90 }}>
           🔥 风险热力图<br />
-          3538 条反馈 → TOP 问题<br />
-          数据支撑策略优先级
+          3538 条反馈 ➔ TOP 问题<br />
+          数据支撑决策优先级
         </div>
       </div>
       <div style={{ height: (925 * scale) || 925 }} />

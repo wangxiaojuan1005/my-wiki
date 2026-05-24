@@ -5,6 +5,23 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import {
+  AlertTriangle,
+  Search,
+  Users,
+  Target,
+  RotateCw,
+  Lightbulb,
+  MessageSquare,
+  Settings,
+  BarChart4,
+  Trophy,
+  ArrowRight,
+  ArrowDown,
+  Zap,
+  Tag,
+  UserCheck,
+} from "lucide-react";
 
 export default function SlideProject3() {
   return (
@@ -12,833 +29,503 @@ export default function SlideProject3() {
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="proj-3"
     >
-      <style>{`
-        /* McKinsey Slide Color Language Scoped Specifically for .proj-3 */
-        .proj-3 {
-          --mck-navy: #0c2340;         /* Primary McKinsey Deep Navy */
-          --mck-blue: #1d70b8;         /* Primary Accent Professional Blue */
-          --mck-blue-bg: #ebf4fc;      /* Soft Ice Blue Fills */
-          --mck-blue-border: #cbdceb;  /* Crisp Thin Soft Blue Outline */
-          
-          --mck-terracotta: #be4d38;   /* McKinsey Highlight Accent Terracotta/Rust Coral */
-          --mck-terracotta-bg: #fcf4f2;/* Light Terracotta backdrop */
-          --mck-terracotta-border: #f0ddd7;
-          
-          --mck-teal: #127743;         /* McKinsey Soft Success Teal/Green */
-          --mck-teal-bg: #edf6f1;      /* Light Cream-Teal backdrop */
-          --mck-teal-border: #d4ebd9;
-          
-          --mck-slate: #4a5568;        /* Body Secondary Label Grey */
-          --mck-bg: #f5f7fa;           /* Background canvas */
-          --mck-card-bg: #ffffff;
-          --mck-border-divider: #d2dce6;
-          
-          margin: 0;
-          background: var(--mck-bg);
-          font-family: "PingFang SC", "Microsoft YaHei", "Inter", sans-serif;
-          color: var(--mck-navy);
-        }
-
-        .proj-3 .page {
-          width: 100%;
-          max-width: 1920px;
-          margin: 0 auto;
-          padding: 24px;
-          background: radial-gradient(circle at top left, #ffffff 0%, var(--mck-bg) 55%, #e6edf6 100%) !important;
-          border-radius: 20px;
-        }
-
-        .proj-3 .title {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          margin-bottom: 24px;
-          border-bottom: 3px solid var(--mck-navy); /* Solid Underline McKinsey Style separator */
-          padding-bottom: 16px;
-        }
-
-        .proj-3 .title-left h1 {
-          font-size: 38px;
-          font-weight: 850;
-          color: var(--mck-navy) !important;
-          letter-spacing: -0.5px;
-          line-height: 1.25;
-          margin-bottom: 4px;
-        }
-
-        .proj-3 .title-left p {
-          font-size: 16px;
-          color: var(--mck-slate) !important;
-          font-weight: 600;
-        }
-
-        .proj-3 .top-stats {
-          display: flex;
-          gap: 14px;
-        }
-
-        .proj-3 .top-card {
-          width: 190px;
-          height: auto;
-          min-height: 85px;
-          background: var(--mck-card-bg) !important;
-          border: 1px solid var(--mck-blue-border) !important;
-          border-radius: 12px !important;
-          box-shadow: 0 4px 12px rgba(12, 35, 64, 0.03) !important;
-          display: flex;
-          align-items: center;
-          gap: 12px !important;
-          padding: 12px 14px !important;
-          transition: all 0.2s ease;
-        }
-
-        .proj-3 .top-card:hover {
-          transform: translateY(-2px);
-          border-color: var(--mck-blue);
-          box-shadow: 0 6px 16px rgba(12, 35, 64, 0.05);
-        }
-
-        .proj-3 .top-icon {
-          width: 38px;
-          height: 38px;
-          border-radius: 8px !important;
-          background: var(--mck-blue-bg) !important;
-          color: var(--mck-blue) !important;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 18px !important;
-        }
-
-        .proj-3 .top-card .num {
-          font-size: 20px;
-          font-weight: 850;
-          color: var(--mck-navy) !important;
-          line-height: 1.1;
-        }
-
-        .proj-3 .top-card .label {
-          margin-top: 2px;
-          font-size: 11px;
-          color: var(--mck-slate) !important;
-          font-weight: 600;
-        }
-
-        .proj-3 .section {
-          background: var(--mck-card-bg) !important;
-          border-radius: 18px !important;
-          border: 1px solid var(--mck-border-divider) !important;
-          box-shadow: 0 8px 24px rgba(12, 35, 64, 0.03) !important;
-          margin-bottom: 24px;
-          overflow: hidden;
-          padding: 20px !important;
-        }
-
-        .proj-3 .sec-title {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          margin-bottom: 20px !important;
-          border-bottom: none !important;
-        }
-
-        .proj-3 .sec-index {
-          width: 34px;
-          height: 34px;
-          border-radius: 6px !important;
-          background: var(--mck-navy) !important;
-          color: #ffffff !important;
-          font-size: 20px;
-          font-weight: 800;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: none !important;
-        }
-
-        .proj-3 .sec-title h2 {
-          font-size: 24px;
-          font-weight: 800;
-          color: var(--mck-navy) !important;
-          letter-spacing: -0.2px;
-          margin: 0;
-        }
-
-        .proj-3 .grid-3 {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1.2fr;
-          gap: 20px;
-        }
-
-        .proj-3 .card {
-          background: var(--mck-card-bg) !important;
-          border-radius: 12px !important;
-          border: 1px solid var(--mck-border-divider) !important;
-          padding: 18px !important;
-          box-shadow: none !important;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .proj-3 .card-title {
-          font-size: 18px;
-          font-weight: 800;
-          color: var(--mck-navy) !important;
-          margin-bottom: 16px;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          border-left: 4px solid var(--mck-blue) !important;
-          padding-left: 10px;
-          background: transparent !important;
-        }
-
-        .proj-3 .text {
-          color: var(--mck-slate) !important;
-          font-size: 14px !important;
-          line-height: 1.6 !important;
-          margin-bottom: 12px;
-        }
-
-        .proj-3 .danger-list {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
-
-        .proj-3 .danger-item {
-          background: var(--mck-terracotta-bg) !important;
-          border: 1px solid var(--mck-terracotta-border) !important;
-          border-radius: 8px !important;
-          padding: 10px 12px !important;
-          display: flex;
-          align-items: flex-start;
-          gap: 8px;
-          font-size: 13px !important;
-          color: var(--mck-navy) !important;
-        }
-
-        .proj-3 .danger-item i {
-          color: var(--mck-terracotta) !important;
-          margin-top: 2px;
-        }
-
-        .proj-3 .mini-box {
-          background: var(--mck-blue-bg) !important;
-          border: 1px solid var(--mck-blue-border) !important;
-          border-radius: 12px !important;
-          padding: 14px !important;
-          margin-bottom: 12px;
-        }
-
-        .proj-3 .mini-box .mini-title {
-          font-size: 15px !important;
-          font-weight: 800 !important;
-          color: var(--mck-navy) !important;
-          margin-bottom: 6px;
-        }
-
-        .proj-3 .mini-box .mini-title i {
-          color: var(--mck-blue) !important;
-        }
-
-        .proj-3 table {
-          width: 100%;
-          border-collapse: collapse;
-          overflow: hidden;
-          border-radius: 8px;
-          margin-bottom: 16px;
-        }
-
-        .proj-3 th {
-          padding: 8px 6px !important;
-          font-size: 12px !important;
-          font-weight: 700 !important;
-          border-bottom: 2px solid #94a3b8 !important;
-          border-right: 1px solid rgba(255,255,255,.15) !important;
-          background: var(--mck-navy) !important;
-          color: #ffffff !important;
-        }
-
-        .proj-3 td {
-          padding: 6px !important;
-          border: 1px solid #cbd5e1 !important;
-          text-align: center !important;
-          font-size: 12px !important;
-          font-weight: 650 !important;
-          color: var(--mck-navy) !important;
-          background: #ffffff !important;
-        }
-
-        .proj-3 tbody tr:nth-child(even) td {
-          background: #f8fafc !important;
-        }
-
-        .proj-3 .weight {
-          color: var(--mck-blue) !important;
-          font-weight: 800 !important;
-        }
-
-        .proj-3 .grade-row {
-          display: flex;
-          gap: 6px;
-          margin-top: auto;
-        }
-
-        .proj-3 .grade {
-          flex: 1;
-          padding: 8px 4px !important;
-          font-size: 11px !important;
-          font-weight: 800 !important;
-          text-align: center;
-          border-radius: 6px !important;
-          box-shadow: none !important;
-          color: #ffffff !important;
-        }
-
-        .proj-3 .g-a { background: var(--mck-teal) !important; }
-        .proj-3 .g-b { background: #16a34a !important; }
-        .proj-3 .g-c { background: var(--mck-blue) !important; }
-        .proj-3 .g-d { background: #d97706 !important; }
-        .proj-3 .g-e { background: #ea580c !important; }
-        .proj-3 .g-f { background: var(--mck-terracotta) !important; }
-
-        .proj-3 .stat-boxes {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          width: 320px;
-        }
-
-        .proj-3 .stat {
-          background: var(--mck-blue-bg) !important;
-          border: 1px solid var(--mck-blue-border) !important;
-          border-radius: 12px !important;
-          padding: 16px !important;
-          display: flex;
-          flex-direction: column;
-          gap: 4px;
-          position: relative;
-          box-shadow: none !important;
-        }
-
-        .proj-3 .stat i {
-          position: absolute;
-          right: 18px;
-          top: 18px;
-          font-size: 24px !important;
-          color: var(--mck-blue) !important;
-          opacity: 0.15;
-        }
-
-        .proj-3 .stat .big {
-          font-size: 28px !important;
-          font-weight: 850 !important;
-          color: var(--mck-navy) !important;
-        }
-
-        .proj-3 .stat .small {
-          font-size: 13px !important;
-          font-weight: 600 !important;
-          color: var(--mck-slate) !important;
-        }
-
-        .proj-3 .chart {
-          flex: 1;
-          background: #ffffff !important;
-          border: 1px solid var(--mck-border-divider) !important;
-          border-radius: 14px !important;
-          padding: 20px !important;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .proj-3 .chart-title {
-          font-size: 16px !important;
-          font-weight: 800 !important;
-          color: var(--mck-navy) !important;
-          margin-bottom: 24px !important;
-        }
-
-        .proj-3 .bar-wrap {
-          flex: 1;
-          height: 180px !important;
-          background: #f1f5f9 !important;
-          border-radius: 8px !important;
-          width: 54px !important;
-        }
-
-        .proj-3 .bar {
-          border-radius: 6px !important;
-          transition: all 0.3s ease;
-        }
-
-        .proj-3 .bar.gray {
-          background: #94a3b8 !important;  /* Prior Time */
-        }
-
-        .proj-3 .bar.blue {
-          background: var(--mck-blue) !important; /* AI Time */
-        }
-
-        .proj-3 .bar span {
-          font-size: 12px !important;
-          font-weight: 800 !important;
-          color: #ffffff !important;
-        }
-
-        .proj-3 .change {
-          font-size: 13px !important;
-          font-weight: 800 !important;
-          padding: 3px 6px !important;
-          border-radius: 4px !important;
-        }
-
-        .proj-3 .change.down {
-          background: var(--mck-teal-bg) !important;
-          color: var(--mck-teal) !important;
-        }
-
-        .proj-3 .effect {
-          background: var(--mck-teal-bg) !important;
-          border: 1px solid var(--mck-teal-border) !important;
-          border-radius: 12px !important;
-          padding: 16px !important;
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          margin-top: 20px !important;
-          box-shadow: none !important;
-        }
-
-        .proj-3 .effect i {
-          font-size: 26px !important;
-          color: var(--mck-teal) !important;
-        }
-
-        .proj-3 .effect b {
-          color: var(--mck-navy) !important;
-        }
-
-        .proj-3 .layer {
-          background: #ffffff !important;
-          border: 1px solid var(--mck-border-divider) !important;
-          border-radius: 12px !important;
-          padding: 18px !important;
-          box-shadow: none !important;
-        }
-
-        .proj-3 .layer-title {
-          font-size: 17px !important;
-          font-weight: 800 !important;
-          color: var(--mck-navy) !important;
-          border-bottom: 2px solid var(--mck-blue-border) !important;
-          padding-bottom: 8px !important;
-          margin-bottom: 16px !important;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        }
-
-        .proj-3 .layer-title i {
-          color: var(--mck-blue) !important;
-        }
-
-        .proj-3 .feedback {
-          background: #ffffff !important;
-          border: 1px solid var(--mck-border-divider) !important;
-          border-radius: 12px !important;
-          padding: 18px !important;
-          box-shadow: none !important;
-        }
-
-        .proj-3 .fb {
-          border-bottom: 1px solid #e2e8f0 !important;
-          padding-bottom: 12px !important;
-          margin-bottom: 12px !important;
-        }
-
-        .proj-3 .fb:last-child {
-          border-bottom: none !important;
-          padding-bottom: 0 !important;
-          margin-bottom: 0 !important;
-        }
-
-        .proj-3 .result {
-          background: #ffffff !important;
-          border: 1px solid var(--mck-border-divider) !important;
-          border-radius: 12px !important;
-          padding: 18px !important;
-          box-shadow: none !important;
-        }
-
-        .proj-3 .result-card {
-          border-radius: 10px !important;
-          padding: 14px !important;
-          border: 1px solid var(--mck-border-divider) !important;
-          transition: all 0.2s ease;
-        }
-
-        .proj-3 .result-card:hover {
-          transform: translateY(-2px);
-          border-color: var(--mck-teal-border);
-          box-shadow: 0 4px 12px rgba(18, 119, 67, 0.04);
-        }
-
-        .proj-3 .result-card:nth-child(1) h4 { color: var(--mck-teal) !important; }
-        .proj-3 .result-card:nth-child(1) i { color: var(--mck-teal) !important; }
-        .proj-3 .result-card:nth-child(2) h4 { color: var(--mck-blue) !important; }
-        .proj-3 .result-card:nth-child(2) i { color: var(--mck-blue) !important; }
-        .proj-3 .result-card:nth-child(3) h4 { color: var(--mck-terracotta) !important; }
-        .proj-3 .result-card:nth-child(3) i { color: var(--mck-terracotta) !important; }
-
-        .proj-3 .result-card h4 {
-          font-size: 15px !important;
-          font-weight: 800 !important;
-        }
-
-        .proj-3 .result-card p {
-          color: var(--mck-slate) !important;
-          font-size: 13px !important;
-          line-height: 1.5 !important;
-          font-weight: 600 !important;
-        }
-
-        .proj-3 .bottom {
-          background: var(--mck-blue-bg) !important;
-          border: 1.5px solid var(--mck-blue-border) !important;
-          border-radius: 12px !important;
-          padding: 18px !important;
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          margin-top: 24px !important;
-          box-shadow: none !important;
-        }
-
-        .proj-3 .bottom i {
-          font-size: 26px !important;
-          color: var(--mck-blue) !important;
-        }
-      `}</style>
-      <div className="page active">
-        {/* Title area */}
-        <div className="title">
-          <div className="title-left">
-            <h1>项目三：智能跃迁，LIVIS 理想同学 AI 生态建设与多维治理</h1>
-            <p>搭建测试 AI 生态底座 + 创设大模型 7 维度治理红线 + AI 强渡计划推进 &amp; 师带徒薪火传承 8 优秀实践</p>
-          </div>
-          <div className="top-stats">
-            <div className="top-card">
-              <div className="top-icon"><i className="fa-solid fa-users"></i></div>
-              <div>
-                <div className="num">45 人</div>
-                <div className="label">AI 强渡计划覆盖</div>
-              </div>
-            </div>
-            <div className="top-card">
-              <div className="top-icon"><i className="fa-solid fa-handshake-angle"></i></div>
-              <div>
-                <div className="num">100%</div>
-                <div className="label">核心业务线通盖</div>
-              </div>
-            </div>
-            <div className="top-card">
-              <div className="top-icon"><i className="fa-solid fa-book-bookmark"></i></div>
-              <div>
-                <div className="num">1,300+ 份</div>
-                <div className="label">提质方案在线通读次</div>
-              </div>
-            </div>
+      <div className="page active" style={{ padding: "24px" }}>
+        {/* Top Header */}
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "24px", padding: "16px 24px 10px", borderBottom: "3px solid #dbe4f1" }}>
+          <div>
+            <div style={{ fontSize: "24px", fontWeight: 900, color: "#14276b", lineHeight: 1.2, letterSpacing: "1px" }}>项目三：AI生态建设 — Skill 质量治理体系与团队赋能</div>
           </div>
         </div>
 
-        {/* Section 1: AI 生态建设与治理 */}
-        <div className="section">
-          <div className="sec-title">
-            <div className="sec-index">1</div>
-            <h2>AI 实战攻防：理想同学 AI 生态建设与大模型 7 维度治理闭环 (P0级防御)</h2>
+        {/* Section 1 Card */}
+        <div className="bg-white border border-[#CED4DA] rounded-[18px] shadow-[0_8px_24px_rgba(12,35,64,0.03)] mb-6">
+          {/* Section 1 Header */}
+          <div className="flex items-center gap-3 px-5 pt-[14px] pb-2.5">
+            <div className="w-[34px] h-[34px] rounded-md bg-[#003A70] text-white text-xl font-extrabold flex items-center justify-center shrink-0">
+              1
+            </div>
+            <h3 className="text-[22px] font-extrabold text-[#003A70] tracking-[-0.2px]">
+              AI治理：建设 Skill 质量治理体系
+            </h3>
           </div>
-          <div className="grid-3">
-            {/* Column 1 */}
-            <div className="card">
-              <div className="card-title">
-                <i className="fa-solid fa-triangle-exclamation"></i> 痛点背景与高危防区
-              </div>
-              <p className="text">
-                随着大模型在智舱业务深度扎根，AI 在进行需求解读、用例翻译等测试工作中，如果大模型发生<b>幻觉、错误推理、语义脱位</b>，会直接引发严重测试漏测，属于最高危质量漏洞防线！传统通过人工通读核验，极其枯燥且单次大版本耗时耗力。
-              </p>
-              <div className="danger-list">
-                <div className="danger-item">
-                  <i className="fa-solid fa-circle-exclamation"></i>
-                  <span><b>幻觉逃逸：</b>大模型凭空篡改契约字段，测试依据失准！</span>
+
+          {/* Upper Content Grid: 30/70 */}
+          <div className="grid grid-cols-1 lg:grid-cols-[30fr_70fr] gap-2.5 px-2.5">
+            {/* Left Column (30%): Pain Points */}
+            <div className="border border-[#CED4DA] rounded-[10px] bg-white">
+              <div className="p-4 text-[15px] leading-relaxed">
+                <div className="flex items-center gap-1.5 mb-2.5 text-[15px] text-[#003A70] font-bold">
+                  <Zap className="w-[18px] h-[18px] text-[#C92A2A]" />
+                  <span className="underline ml-1.5">痛点</span>
                 </div>
-                <div className="danger-item">
-                  <i className="fa-solid fa-circle-exclamation"></i>
-                  <span><b>语义偏失：</b>PRD 更新后，大模型仍输出历史依赖，造成断变漏测。</span>
+                <div className="font-semibold mb-3.5">
+                  26年初OpenClaw Skill 市场用户已贡献了几百个 Skill，<br />
+                  但是质量、复用性和 token 消耗情况均未知：
                 </div>
-                <div className="danger-item">
-                  <i className="fa-solid fa-circle-exclamation"></i>
-                  <span><b>逻辑混乱：</b>车端多重路由下，模型由于关联参数缺失逻辑断线。</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Column 2 */}
-            <div className="card">
-              <div className="card-title">
-                <i className="fa-solid fa-shield-virus"></i> 生态治理：多维度防御链路
-              </div>
-              <div className="mini-box">
-                <div className="mini-title"><i className="fa-solid fa-scale-balanced"></i> 多模型竞技平台一键拉通</div>
-                <p className="text" style={{ fontSize: "14px" }}>
-                  通过将一期至三期 <b>11 种自建模模型、开源微调模型</b> 接入竞技，对同段 PRD 一键输入，自动比对大模型语义冲突，找出谁在逃逸幻觉，精确捕获劣汰节点。
-                </p>
-              </div>
-              <div className="mini-box" style={{ borderColor: "#a7e68a", background: "#f4fff0" }}>
-                <div className="mini-title" style={{ color: "#15803d" }}><i className="fa-solid fa-shield-halved"></i> 最终防线治理卡边</div>
-                <p className="text" style={{ fontSize: "14px", color: "#14532d" }}>
-                  沉淀 <b>AI 漏测规避检查 7 维评估矩阵</b>。大模型对测试方案一键通读评审，秒级定位高危漏测因子！
-                </p>
-              </div>
-            </div>
-
-            {/* Column 3 */}
-            <div className="card">
-              <div className="card-title">
-                <i className="fa-solid fa-star-half-stroke"></i> 大模型评价与 7 维分档治理卡规
-              </div>
-              <table style={{ marginBottom: "18px" }}>
-                <thead>
-                  <tr>
-                    <th>评估特征</th>
-                    <th>关注权重</th>
-                    <th>检验技术标准</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style={{ fontWeight: 800 }}>字段解析一致性</td>
-                    <td className="weight">0.25</td>
-                    <td style={{ textAlign: "left", fontSize: "13px" }}>契约字段 100% 对齐契约协议</td>
-                  </tr>
-                  <tr>
-                    <td style={{ fontWeight: 800 }}>语义逻辑匹配度</td>
-                    <td className="weight">0.20</td>
-                    <td style={{ textAlign: "left", fontSize: "13px" }}>判定核心路径、备用分支是否完备</td>
-                  </tr>
-                  <tr>
-                    <td style={{ fontWeight: 800 }}>上下文断变感知</td>
-                    <td className="weight">0.20</td>
-                    <td style={{ textAlign: "left", fontSize: "13px" }}>微小需求变动能够一秒精确感知</td>
-                  </tr>
-                  <tr>
-                    <td style={{ fontWeight: 800 }}>容错防呆纠偏</td>
-                    <td className="weight">0.15</td>
-                    <td style={{ textAlign: "left", fontSize: "13px" }}>输入脏假数据大模型拒绝机制</td>
-                  </tr>
-                  <tr>
-                    <td style={{ fontWeight: 800 }}>时效耗时底线</td>
-                    <td className="weight">0.10</td>
-                    <td style={{ textAlign: "left", fontSize: "13px" }}>单次请求判定时间绝对 &lt; 5s</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div className="grade-row">
-                <div className="grade g-a">A档 (极优)</div>
-                <div className="grade g-b">B档 (推荐)</div>
-                <div className="grade g-c">C档 (合格)</div>
-                <div className="grade g-d">D档 (警戒)</div>
-                <div className="grade g-e">E档 (不良)</div>
-                <div className="grade g-f">F档 (熔断)</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Section 2: AI 强渡计划与提效数据 */}
-        <div className="section">
-          <div className="sec-title">
-            <div className="sec-index">2</div>
-            <h2>数字说话：测试人员全员 AI 技能“强渡计划”与提效爆发成果</h2>
-          </div>
-          <div className="stats-row">
-            {/* Left */}
-            <div className="stat-boxes">
-              <div className="stat">
-                <i className="fa-solid fa-sailboat"></i>
-                <div className="big">45 名成员</div>
-                <div className="small">全员测试不落单，100% 强渡上岸</div>
-              </div>
-              <div className="stat">
-                <i className="fa-solid fa-bullseye"></i>
-                <div className="big">98% ↑</div>
-                <div className="small">在手业务需求大范围 AI 全覆盖率</div>
-              </div>
-              <div className="stat" style={{ borderColor: "#86efac" }}>
-                <i className="fa-solid fa-bolt-lightning" style={{ color: "#16a34a" }}></i>
-                <div className="big" style={{ color: "#16a34a" }}>10+ 典型场景</div>
-                <div className="small">测试痛点被 AI 强力推翻拦截</div>
-              </div>
-            </div>
-
-            {/* Right Group column chart */}
-            <div className="chart">
-              <div className="chart-title">自建 AI 典型场景改造工时对比 (单次耗时降低/分钟级)</div>
-              <div className="bars">
-                
-                <div className="bar-group">
-                  <div className="bar-wrap">
-                    <div className="bar gray" style={{ height: "180px" }}><span>120m</span></div>
-                    <div className="bar blue" style={{ height: "8px" }}><span>5m</span></div>
+                <div className="space-y-3.5">
+                  <div className="flex items-start gap-2 font-semibold">
+                    <AlertTriangle className="w-[18px] h-[18px] text-[#C92A2A] shrink-0 mt-1" />
+                    <span>用户面对海量 Skill 无从选择</span>
                   </div>
-                  <div>PRD 澄清分析</div>
-                  <div className="change down">省时 -95%</div>
-                </div>
-
-                <div className="bar-group">
-                  <div className="bar-wrap">
-                    <div className="bar gray" style={{ height: "200px" }}><span>180m</span></div>
-                    <div className="bar blue" style={{ height: "45px" }}><span>45m</span></div>
+                  <div className="flex items-start gap-2 font-semibold">
+                    <AlertTriangle className="w-[18px] h-[18px] text-[#C92A2A] shrink-0 mt-1" />
+                    <span>不同团队各自开发功能重叠的 Skill</span>
                   </div>
-                  <div>用例编写设计</div>
-                  <div className="change down">省时 -75%</div>
-                </div>
-
-                <div className="bar-group">
-                  <div className="bar-wrap">
-                    <div className="bar gray" style={{ height: "100px" }}><span>90m</span></div>
-                    <div className="bar blue" style={{ height: "10px" }}><span>10m</span></div>
+                  <div className="flex items-start gap-2 font-semibold">
+                    <AlertTriangle className="w-[18px] h-[18px] text-[#C92A2A] shrink-0 mt-1" />
+                    <span>低质量 Skill 持续消耗计算资源却不产生对应价值</span>
                   </div>
-                  <div>信息流追查 Trace</div>
-                  <div className="change down">省时 -88%</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column (70%): 7-Dimension Derivation */}
+            <div className="border border-[#CED4DA] rounded-[10px] bg-white">
+              <div className="p-4 pt-[14px]">
+                <div className="text-[#003A70] font-extrabold text-[15px] leading-normal mb-2.5">
+                  7 维度体系不是凭空设计，遵循"先摸清输入、再结合约束、后收敛方案"的推导路径：
                 </div>
 
-                <div className="bar-group">
-                  <div className="bar-wrap">
-                    <div className="bar gray" style={{ height: "160px" }}><span>150m</span></div>
-                    <div className="bar blue" style={{ height: "20px" }}><span>20m</span></div>
+                {/* Step 1 */}
+                <div className="grid grid-cols-[200px_1fr] gap-3 items-center mb-2.5">
+                  <div className="border border-[#CED4DA] rounded-lg bg-[#E8EDF4] min-h-[78px] p-2.5 flex items-center gap-2.5">
+                    <div className="w-7 h-7 rounded-full border-[3px] border-[#003A70] flex items-center justify-center text-[#003A70] text-[13px] shrink-0">
+                      <Search className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-[#003A70] font-extrabold text-[15px] mb-0.5">输入一</div>
+                      <div className="text-[15px] text-[#495057] font-semibold">业内开源方案调研</div>
+                    </div>
                   </div>
-                  <div>缺陷定位诊断</div>
-                  <div className="change down">省时 -86%</div>
+                  <div className="border border-[#CED4DA] rounded-lg min-h-[78px] bg-white p-3 flex items-center text-[15px] leading-relaxed font-semibold">
+                    参考业界已开源的 Skill 质量度量方案，了解社区已有的评估维度和分级标准
+                  </div>
                 </div>
 
+                {/* Step 2 */}
+                <div className="grid grid-cols-[200px_1fr] gap-3 items-center mb-2.5">
+                  <div className="border border-[#CED4DA] rounded-lg bg-[#E8EDF4] min-h-[98px] p-2.5 flex items-center gap-2.5">
+                    <div className="w-7 h-7 rounded-full border-[3px] border-[#003A70] flex items-center justify-center text-[#003A70] text-[13px] shrink-0">
+                      <Users className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-[#003A70] font-extrabold text-[15px] mb-0.5">输入二</div>
+                      <div className="text-[15px] text-[#495057] font-semibold">真实使用场景约束</div>
+                    </div>
+                  </div>
+                  <div className="border border-[#CED4DA] rounded-lg min-h-[98px] bg-white p-3 flex items-center text-[15px] leading-relaxed font-semibold">
+                    <div>
+                      <div>• Skill 需同时支持 OpenClaw 和 Claude Code两个平台的安装和使用，评估体系须覆盖双平台兼容性</div>
+                      <div>• Token 消耗需纳入考量: 一个功能可用但每次调用消耗数万 Token 的 Skill，也不能视为"高质量"</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="grid grid-cols-[200px_1fr] gap-3 items-center">
+                  <div className="border border-[#CED4DA] rounded-lg bg-[#E8EDF4] min-h-[78px] p-2.5 flex items-center gap-2.5">
+                    <div className="w-7 h-7 rounded-full border-[3px] border-[#003A70] flex items-center justify-center text-[#003A70] text-[13px] shrink-0">
+                      <Target className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-[#003A70] font-extrabold text-[15px] mb-0.5">收敛</div>
+                      <div className="text-[15px] text-[#495057] font-semibold">形成体系</div>
+                    </div>
+                  </div>
+                  <div className="border border-[#CED4DA] rounded-lg min-h-[78px] bg-white p-3 flex items-center text-[15px] leading-relaxed font-semibold">
+                    将业内方案与团队约束交叉比对，收敛为7 维度加权评分体系
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="effect" style={{ marginTop: "18px" }}>
-            <i className="fa-solid fa-trophy"></i>
-            <div>
-              <b>强渡核心成效：</b>测试日常执行时间大额剔去水分，全员彻底甩开无谓的手工重复点点点，将 <b>70% 繁杂机械时间释放</b> 倾注于高质量技术架构研发中，带领团队走入质量技术深水区！
+          {/* Bottom Section: 50/50 */}
+          <div className="mx-2.5 mt-2.5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
+              {/* Left 50%: 7-Dimension Table */}
+              <div className="border border-[#CED4DA] rounded-[10px] bg-white p-2.5">
+                <div className="text-center text-[#003A70] font-black text-[15px] mb-2">
+                  7 维度加权评分体系（ A–F六级分类 ）
+                </div>
+                <table className="w-full border-collapse text-[15px]">
+                  <thead>
+                    <tr className="bg-[#003A70] text-white">
+                      <th className="p-2.5 px-1.5 border border-[#CED4DA] font-extrabold text-[15px] w-[149px]">评估维度</th>
+                      <th className="p-2.5 px-1.5 border border-[#CED4DA] font-extrabold text-[15px] w-[130px]">检查内容</th>
+                      <th className="p-2.5 px-1.5 border border-[#CED4DA] font-extrabold text-[15px] w-[179px]">解决的问题</th>
+                    </tr>
+                  </thead>
+                  <tbody className="font-semibold">
+                    <tr>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">1</span>
+                        SKILL.md 质量
+                      </td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">元数据完整性、参数定义、使用说明是否清晰</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">Skill 可发现、可理解</td>
+                    </tr>
+                    <tr>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">2</span>
+                        脚本静态分析
+                      </td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">代码规范、潜在错误、安全风险</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">Skill 代码质量可控</td>
+                    </tr>
+                    <tr>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">3</span>
+                        模拟运行
+                      </td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">在沙箱环境实际执行，验证功能可用</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">发布前"真的能跑"</td>
+                    </tr>
+                    <tr>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">4</span>
+                        文档代码一致性
+                      </td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">SKILL.md 描述与实际行为是否一致</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">避免"说的和做的不一样"</td>
+                    </tr>
+                    <tr>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">5</span>
+                        兼容性检查
+                      </td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">依赖版本、平台兼容性</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">安装即可用，不报错</td>
+                    </tr>
+                    <tr>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">6</span>
+                        Token 预估
+                      </td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">预估单次调用消耗的Token 量</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">成本可控、可预算</td>
+                    </tr>
+                    <tr>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">7</span>
+                        7 维度综合评级
+                      </td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">上述维度加权评分，输出 A–F 六级分类</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">差异化检查策略，按级管理</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Right 50%: Bar Chart */}
+              <div className="bg-white border border-[#CED4DA] rounded-[10px] py-3 px-5 flex flex-col justify-center">
+                {/* Legend */}
+                <div className="flex justify-center items-center gap-12 mb-1">
+                  <div className="flex items-center gap-2.5 text-[15px] font-bold text-black">
+                    <div className="w-[18px] h-[18px] rounded-[3px] bg-[#003A70]" />
+                    <span>优化前</span>
+                  </div>
+                  <div className="flex items-center gap-2.5 text-[15px] font-bold text-black">
+                    <div className="w-[18px] h-[18px] rounded-[3px] bg-[#2B8A3E]" />
+                    <span>优化后</span>
+                  </div>
+                </div>
+
+                {/* Chart Area */}
+                <div className="relative w-full h-[240px] pl-[60px] pr-6">
+                  {/* Grid Lines */}
+                  <div className="absolute left-[60px] right-6 border-t-2 border-dashed border-[#D2D7E1]" style={{ top: 20 }} />
+                  <div className="absolute left-[60px] right-6 border-t-2 border-dashed border-[#D2D7E1]" style={{ top: 88 }} />
+                  <div className="absolute left-[60px] right-6 border-t-2 border-dashed border-[#D2D7E1]" style={{ top: 123 }} />
+                  <div className="absolute left-[60px] right-6 border-t-2 border-dashed border-[#D2D7E1]" style={{ top: 157 }} />
+                  <div className="absolute left-[60px] right-6 border-t-2 border-dashed border-[#D2D7E1]" style={{ top: 191 }} />
+                  <div className="absolute left-[60px] right-6 border-t-2 border-dashed border-[#D2D7E1]" style={{ bottom: 15 }} />
+
+                  {/* Y Axis Labels */}
+                  <div className="absolute left-[14px] text-base text-black font-medium" style={{ top: 225 }}>0</div>
+                  <div className="absolute left-[14px] text-base text-black font-medium" style={{ top: 191 }}>20</div>
+                  <div className="absolute left-[14px] text-base text-black font-medium" style={{ top: 157 }}>40</div>
+                  <div className="absolute left-[14px] text-base text-black font-medium" style={{ top: 123 }}>60</div>
+                  <div className="absolute left-[14px] text-base text-black font-medium" style={{ top: 88 }}>80</div>
+                  <div className="absolute left-[14px] text-base text-black font-medium" style={{ top: 20 }}>120</div>
+
+                  {/* Y Axis */}
+                  <div className="absolute left-[60px] top-[20px] bottom-[15px] w-[3px] bg-[#1e1e1e]" />
+                  {/* X Axis */}
+                  <div className="absolute left-[60px] right-6 bottom-[15px] h-[3px] bg-[#1e1e1e]" />
+
+                  {/* Bar Groups */}
+                  <div className="absolute left-[84px] right-9 top-[20px] bottom-[15px] flex justify-between items-end">
+                    {/* D (不合格) */}
+                    <div className="flex flex-col items-center flex-1 max-w-[63px] h-full justify-end">
+                      <div className="flex items-end gap-1 h-full">
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="w-[22px] rounded-t-[3px] bg-[#003A70] relative" style={{ height: 26 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">15</span>
+                          </div>
+                        </div>
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-center font-extrabold text-[#C92A2A]">
+                            <span className="text-[15px]">↓7</span>
+                          </div>
+                          <div className="w-[22px] rounded-t-[3px] bg-[#2B8A3E] relative" style={{ height: 14 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">8</span>
+                          </div>
+                        </div>
+                      </div>
+                      <span className="mt-3 text-[15px] font-medium text-black whitespace-nowrap">D（不合格）</span>
+                    </div>
+
+                    {/* E (需改进) */}
+                    <div className="flex flex-col items-center flex-1 max-w-[63px] h-full justify-end">
+                      <div className="flex items-end gap-1 h-full">
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="w-[22px] rounded-t-[3px] bg-[#003A70] relative" style={{ height: 27 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">16</span>
+                          </div>
+                        </div>
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-center font-extrabold text-[#2B8A3E]">
+                            <span className="text-[15px]">↑6</span>
+                          </div>
+                          <div className="w-[22px] rounded-t-[3px] bg-[#2B8A3E] relative" style={{ height: 38 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">22</span>
+                          </div>
+                        </div>
+                      </div>
+                      <span className="mt-3 text-[15px] font-medium text-black whitespace-nowrap">E（需改进）</span>
+                    </div>
+
+                    {/* C (一般) */}
+                    <div className="flex flex-col items-center flex-1 max-w-[63px] h-full justify-end">
+                      <div className="flex items-end gap-1 h-full">
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="w-[22px] rounded-t-[3px] bg-[#003A70] relative" style={{ height: 77 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">45</span>
+                          </div>
+                        </div>
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-center font-extrabold text-[#2B8A3E]">
+                            <span className="text-[15px]">↑2</span>
+                          </div>
+                          <div className="w-[22px] rounded-t-[3px] bg-[#2B8A3E] relative" style={{ height: 80 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">47</span>
+                          </div>
+                        </div>
+                      </div>
+                      <span className="mt-3 text-[15px] font-medium text-black whitespace-nowrap">C（一般）</span>
+                    </div>
+
+                    {/* B (良好) */}
+                    <div className="flex flex-col items-center flex-1 max-w-[63px] h-full justify-end">
+                      <div className="flex items-end gap-1 h-full">
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="w-[22px] rounded-t-[3px] bg-[#003A70] relative" style={{ height: 145 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">85</span>
+                          </div>
+                        </div>
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-center font-extrabold text-[#C92A2A]">
+                            <span className="text-[15px]">↓9</span>
+                          </div>
+                          <div className="w-[22px] rounded-t-[3px] bg-[#2B8A3E] relative" style={{ height: 130 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">76</span>
+                          </div>
+                        </div>
+                      </div>
+                      <span className="mt-3 text-[15px] font-medium text-black whitespace-nowrap">B（良好）</span>
+                    </div>
+
+                    {/* A (优秀) */}
+                    <div className="flex flex-col items-center flex-1 max-w-[63px] h-full justify-end">
+                      <div className="flex items-end gap-1 h-full">
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="w-[22px] rounded-t-[3px] bg-[#003A70] relative" style={{ height: 161 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">94</span>
+                          </div>
+                        </div>
+                        <div className="relative w-[22px] flex justify-center items-end">
+                          <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-center font-extrabold text-[#2B8A3E]">
+                            <span className="text-[15px]">↑6</span>
+                          </div>
+                          <div className="w-[22px] rounded-t-[3px] bg-[#2B8A3E] relative" style={{ height: 171 }}>
+                            <span className="absolute -top-[22px] left-1/2 -translate-x-1/2 text-xs font-bold text-black whitespace-nowrap">100</span>
+                          </div>
+                        </div>
+                      </div>
+                      <span className="mt-3 text-[15px] font-medium text-black whitespace-nowrap">A（优秀）</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Banner */}
+          <div className="mx-2.5 mt-2 mb-2 h-[38px] rounded-lg overflow-hidden border border-[#CED4DA] flex">
+            <div className="w-[510px] bg-[#003A70] text-white flex items-center justify-center font-extrabold text-[17px] border-r border-white/25">
+              <RotateCw className="w-4 h-4 mr-2" />
+              已接入 OpenClaw 市场，评估 Skill 数量 465 个
+            </div>
+            <div className="flex-1 bg-[#003A70] text-white flex items-center justify-center font-extrabold text-[15px]">
+              针对 256 个 Skill 进行跟踪，发现 22 个 Skill 质量在变好，尤其是 F 不合格 → A 通过的变化
             </div>
           </div>
         </div>
 
-        {/* Section 3: 薪火传承培养 */}
-        <div className="section" style={{ marginBottom: "0" }}>
-          <div className="sec-title">
-            <div className="sec-index">3</div>
-            <h2>薪火相传：测试团队“师带徒”良性培养基石与 8 杰出实践战果</h2>
+        {/* Section 2 Card */}
+        <div className="bg-white border border-[#CED4DA] rounded-[18px] shadow-[0_8px_24px_rgba(12,35,64,0.03)] overflow-hidden">
+          {/* Section 2 Header */}
+          <div className="flex items-center gap-3 px-5 pt-[14px] pb-2.5">
+            <div className="w-[34px] h-[34px] rounded-md bg-[#003A70] text-white text-xl font-extrabold flex items-center justify-center shrink-0">
+              2
+            </div>
+            <h3 className="text-[22px] font-extrabold text-[#003A70] tracking-[-0.2px]">
+              AI团队内赋能：把方法交出去，让别人也能做
+            </h3>
           </div>
-          <div className="train-grid">
-            {/* Left */}
-            <div className="layer bg-white">
-              <div className="layer-title"><i className="fa-solid fa-graduation-cap"></i> 阶梯式师带徒良性人才梯队培育体系</div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15px", fontWeight: "bold" }}>
-                <div style={{ background: "#fef3c7", border: "1px solid #fde68a", padding: "10px", borderRadius: "10px", color: "#b45309" }}>
-                  <b>🏆 高阶种子 (专家带骨干)：</b>聚焦 AI 提质测试前沿技术架构攻关，负责自研能力沉淀输出底座。
-                </div>
-                <div style={{ background: "#eff6ff", border: "1px solid #bfdbfe", padding: "10px", borderRadius: "10px", color: "#1d4ed8" }}>
-                  <b>🌟 骨干成员 (骨干带基础)：</b>认领核心业务线 Owner 哨岗职责，保障日常需求卡规秩序落地。
-                </div>
-                <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", padding: "10px", borderRadius: "10px", color: "#15803d" }}>
-                  <b>🌱 初阶基础 (普及与跟跑)：</b>熟练熟掌握 10 项以上在手 AI 单兵 Skill 开箱即用，提升日常测试交付基础。
-                </div>
-              </div>
 
-              <div className="feedback" style={{ marginTop: "18px" }}>
-                <div className="fb">
-                  <b>🧑‍🎓 徒弟反馈 A (新晋主力)：</b>
-                  “以前入职测试两眼一黑，全凭师兄口传绝学和文档海洋，难以沉浸。跟着師父一帮一，1个月直接上手 AI 提效，大声说彻底看清了全景契约！”
+          {/* Intro Section */}
+          <div className="mx-2.5 mb-1.5 border border-[#CED4DA] rounded-[10px] bg-white overflow-hidden">
+            <div className="py-[22px] px-2.5 flex gap-7 items-start">
+              <div className="w-[150px] flex justify-center pt-2">
+                <Users className="w-10 h-10 text-[#003A70]" />
+              </div>
+              <div className="flex-1 text-[#003A70] text-[15px] leading-[2] font-bold">
+                AI 提效不能靠单打独斗。很多一线测试同学扎根业务，对外界 AI 感知不明显，仍然采用传统硬基方案做事。<br />
+                如果不主动拉齐，意识未跟上的人会被加速淘汰，团队整体能力也会出现断层。
+              </div>
+            </div>
+          </div>
+
+          {/* Middle Grid: 45/55 */}
+          <div className="px-2.5 grid grid-cols-1 lg:grid-cols-[45fr_55fr] gap-[18px] items-stretch">
+            {/* Left Card: Team Sharing */}
+            <div className="bg-white/75 border-2 border-[#CED4DA] rounded-[18px] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_2px_6px_rgba(0,0,0,0.03)] flex flex-col">
+              <div className="p-5 pb-6">
+                <div className="flex items-center gap-[18px] mb-[18px]">
+                  <div className="w-[62px] h-[62px] rounded-full bg-[#003A70] flex items-center justify-center text-white shrink-0">
+                    <Lightbulb className="w-[30px] h-[30px]" />
+                  </div>
+                  <h4 className="text-[#003A70] text-lg font-black">团队内分享</h4>
                 </div>
-                <div className="fb">
-                  <b>👨‍🏫 师傅反馈 B (核心资深)：</b>
-                  “以前每天忙于中转各种研发云端提测试的信息，头晕脑胀、根本没闲心带团队。自从第一、二板斧斩下来，自己不包揽，反而有了足够时间，给徒弟做核心技术指导，大赞良性梯队爆发！”
+                <div className="text-[#003A70] text-[15px] leading-[1.8] font-bold">
+                  在团队会议上讲解 PRD 澄清、<span className="text-[#003A70] font-black">缺陷创建</span>等 Skill 的设计逻辑:
+                  不只是演示功能，而是讲清楚
+                </div>
+                <div className="mt-6 grid grid-cols-3 gap-3.5">
+                  <div className="border-2 border-[#CED4DA] bg-[#E8EDF4] rounded-xl min-h-[92px] p-3 flex gap-3 items-start">
+                    <MessageSquare className="w-6 h-6 text-[#003A70] shrink-0 mt-1" />
+                    <span className="text-[#003A70] text-[15px] leading-relaxed font-bold">识别业务痛点场景</span>
+                  </div>
+                  <div className="border-2 border-[#CED4DA] bg-[#E8EDF4] rounded-xl min-h-[92px] p-3 flex gap-3 items-start">
+                    <Settings className="w-6 h-6 text-[#003A70] shrink-0 mt-1" />
+                    <span className="text-[#003A70] text-[15px] leading-relaxed font-bold">Skill 是怎么设计的</span>
+                  </div>
+                  <div className="border-2 border-[#CED4DA] bg-[#E8EDF4] rounded-xl min-h-[92px] p-3 flex gap-3 items-start">
+                    <BarChart4 className="w-6 h-6 text-[#003A70] shrink-0 mt-1" />
+                    <span className="text-[#003A70] text-[15px] leading-relaxed font-bold">Skill在CC和OC上的使用</span>
+                  </div>
+                </div>
+                <div className="text-center text-[#495057] text-[52px] my-1">
+                  <ArrowDown className="w-[52px] h-[52px] inline" />
+                </div>
+                <div className="text-[#003A70] text-[15px] leading-[1.9] font-bold px-5">
+                  团队同学从 "知道 AI 能做什么" 升级为 "主动探索识别业务场景，用AI改造"
                 </div>
               </div>
             </div>
 
-            {/* Right Column: 8 Outstanding Practices Grid */}
-            <div className="card">
-              <div className="card-title">
-                <i className="fa-solid fa-gem"></i> 测试技术沉淀：8 大标志性优秀实践成果
+            {/* Right: Mentoring System */}
+            <div className="flex flex-col gap-[18px]">
+              <div className="bg-white/75 border-2 border-[#CED4DA] rounded-[18px] flex-1 p-[18px]">
+                <div className="flex gap-2.5">
+                  <div className="w-10 flex justify-center pt-2">
+                    <UserCheck className="w-[35px] h-[35px] text-[#003A70]" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-[#003A70] text-lg font-black mb-[22px] pl-[4%]">
+                      带教外援同学
+                    </h4>
+                    <div className="grid grid-cols-[0.79fr_31px_1.21fr] gap-2 items-center">
+                      {/* First Layer */}
+                      <div className="border-2 border-[#CED4DA] rounded-2xl bg-white p-4 min-h-[270px]">
+                        <span className="inline-flex items-center justify-center bg-[#003A70] text-white rounded-2xl px-[18px] py-1.5 text-base font-black mb-4">
+                          第一层
+                        </span>
+                        <div className="text-[#003A70] text-[17px] leading-[1.8] font-bold mb-[18px]">
+                          学会使用团队已有的 Skill，在业务上实践提效。
+                        </div>
+                        <div className="border-2 border-[#CED4DA] bg-[#E8EDF4] rounded-xl h-[54px] flex items-center justify-center text-[#003A70] text-[17px] font-black mb-3">
+                          融合云业务实践反馈
+                        </div>
+                        <div className="border-2 border-[#CED4DA] bg-[#E8EDF4] rounded-xl h-[54px] flex items-center justify-center text-[#003A70] text-[17px] font-black">
+                          AgentOps实践反馈
+                        </div>
+                      </div>
+
+                      {/* Center Arrow */}
+                      <div className="text-[#495057] text-[31px] text-center">
+                        <ArrowRight className="w-[31px] h-[31px] inline" />
+                      </div>
+
+                      {/* Second Layer */}
+                      <div className="border-2 border-[#CED4DA] rounded-2xl bg-white p-4 min-h-[270px]">
+                        <span className="inline-flex items-center justify-center bg-[#003A70] text-white rounded-2xl px-[18px] py-1.5 text-base font-black mb-4">
+                          第二层
+                        </span>
+                        <div className="text-[#003A70] text-[17px] leading-[1.8] font-bold mb-[18px]">
+                          由我识别痛点、给出建设方案和设计框架，<br />
+                          外援同学在框架内独立完成开发：
+                        </div>
+                        <div className="grid gap-3.5 mt-2 w-[105%] -ml-[2.5%]">
+                          <div className="border-2 border-[#CED4DA] rounded-xl bg-white px-3.5 py-2.5 min-h-[48px]">
+                            <div className="flex items-center gap-2.5 text-[#003A70] text-base font-black mb-3.5">
+                              <Settings className="w-7 h-7" />
+                              自动化回归失败用例分析
+                            </div>
+                            <p className="text-[#003A70] text-base leading-[1.8] font-bold">
+                              30+min/日 → 7~8min/日，提效 ~75%
+                            </p>
+                          </div>
+                          <div className="border-2 border-[#CED4DA] rounded-xl bg-white px-3.5 py-2.5 min-h-[48px]">
+                            <div className="flex items-center gap-2.5 text-[#003A70] text-base font-black mb-3.5">
+                              <Tag className="w-7 h-7" />
+                              模型上下架标注
+                            </div>
+                            <p className="text-[#003A70] text-base leading-[1.8] font-bold">
+                              手动逐个 → 批量一键标注，提效 80%+
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="result" style={{ gridTemplateColumns: "repeat(4, 1fr)", gap: "12px" }}>
-                
-                <div className="result-card">
-                  <i className="fa-solid fa-file-pdf"></i>
-                  <h4>① PRD一键澄清</h4>
-                  <p>自动检测设计文档逻辑漏洞、边界冲突</p>
-                </div>
+            </div>
+          </div>
 
-                <div className="result-card">
-                  <i className="fa-solid fa-code-pull-request"></i>
-                  <h4>② 分支协议比对</h4>
-                  <p>Daily 集成接口变动毫秒捕获告警，阻逃逸</p>
+          {/* Core Verification Bottom */}
+          <div className="mx-2.5 mt-4 mb-4">
+            <div className="bg-white/75 border-2 border-[#CED4DA] rounded-[18px] p-[26px]">
+              <div className="flex items-center gap-[18px]">
+                <div className="w-[62px] h-[62px] rounded-full bg-[#003A70] flex items-center justify-center text-white shrink-0">
+                  <Trophy className="w-[30px] h-[30px]" />
                 </div>
-
-                <div className="result-card">
-                  <i className="fa-solid fa-database"></i>
-                  <h4>③ 虚拟契约建桩</h4>
-                  <p>模拟智舱车联复杂路由脱车自闭验证，省硬件</p>
-                </div>
-
-                <div className="result-card">
-                  <i className="fa-solid fa-gears"></i>
-                  <h4>④ 日志秒级自诊</h4>
-                  <p>千行 Trace Log 智能提取，诊断率高升</p>
-                </div>
-
-                <div className="result-card">
-                  <i className="fa-solid fa-chart-column"></i>
-                  <h4>⑤ 漏损饱和大屏</h4>
-                  <p>工时与系统空跑动态纠偏，高效统包</p>
-                </div>
-
-                <div className="result-card">
-                  <i className="fa-solid fa-clipboard-check"></i>
-                  <h4>⑥ 方案自动通读</h4>
-                  <p>自动关联契约模型，生成功能全热图</p>
-                </div>
-
-                <div className="result-card">
-                  <i className="fa-solid fa-users-viewfinder"></i>
-                  <h4>⑦ 缺陷智能降本</h4>
-                  <p>提报模版智能纠错，缺陷回流时间降</p>
-                </div>
-
-                <div className="result-card">
-                  <i className="fa-solid fa-medal"></i>
-                  <h4>⑧ 7评大模型卡口</h4>
-                  <p>拦截 AI 幻觉，不卡无谓低质量模型登场</p>
-                </div>
-
+                <h4 className="text-[#003A70] text-lg font-black">
+                  核心验证: 从 "我自己能做" → "别人能在我的框架下能做" → "别人能自己识别场景做"
+                </h4>
               </div>
             </div>
           </div>
         </div>
 
-        {/* persistent bottom */}
-        <div className="bottom">
-          <i className="fa-solid fa-quote-left"></i>
-          <span><b>技术带路，质量保驾，薪火传承，久久为功：</b>质量建设没有捷径，我们将继续用 AI 深挖效能上限，用机制坚守质量下限，推动智舱测试工程持续走向自动化、平台化、自成长化的全新未来！</span>
+        {/* Footer */}
+        <div className="text-[#495057] text-xs font-mono font-bold mt-4">
+          Quality Engineering · AI Driven Testing PPT Slide Deck · Slide 3 (AI Ecosystem Design)
         </div>
-
-        <div className="footer-tip">Quality Engineering &middot; AI Driven Testing PPT Slide Deck - Page 4</div>
       </div>
     </motion.div>
   );

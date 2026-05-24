@@ -1,6 +1,6 @@
 {
-  "name": "晋升答辩框架",
-  "description": "基于体系化思维与 AI 赋能重构测试质量保障体系的晋升答辩演示框架。",
+  "name": "晋升答辩",
+  "description": "AI 驱动测试晋升答辩幻灯片框架演示",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

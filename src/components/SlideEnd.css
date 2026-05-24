@@ -1,0 +1,73 @@
+.se-page{
+  width:100%;
+  min-height:768px;
+  margin:0 auto;
+  background:#fff;
+  border:1px solid #CED4DA;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 2px 10px rgba(15,67,217,.03);
+  display:flex;
+  flex-direction:column;
+}
+
+.se-top-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:18px 28px 12px;
+}
+
+.se-top-left .se-top-title{
+  font-size:26px;
+  font-weight:900;
+  color:#003A70;
+  line-height:1.2;
+}
+
+.se-main-content{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:60px 40px;
+  position:relative;
+}
+
+.se-thank-icon{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:linear-gradient(180deg,#00558B,#003A70);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:52px;
+  margin-bottom:32px;
+  box-shadow:0 8px 24px rgba(0,58,112,.25);
+}
+
+.se-thank-title{
+  font-size:56px;
+  font-weight:900;
+  color:#003A70;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+.se-thank-sub{
+  font-size:18px;
+  color:#495057;
+  font-weight:600;
+  letter-spacing:1px;
+  margin-bottom:36px;
+}
+
+.se-divider-line{
+  width:400px;
+  height:2px;
+  background:linear-gradient(to right,transparent,#CED4DA,transparent);
+  margin-bottom:36px;
+}
