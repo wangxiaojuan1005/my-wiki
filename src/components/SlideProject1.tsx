@@ -255,21 +255,21 @@ export default function SlideProject1() {
         .s1-ai2-sub { margin-left: 130px; margin-top: 6px; color: #495057; font-size: 18px; font-weight: 700; margin-bottom: 14px; }
         .s1-ai2-content { display: grid; grid-template-columns: 1.02fr 1.18fr; gap: 18px; align-items: start; }
         .s1-ai2-card { background: #fff; border: 1px solid #CED4DA; border-radius: 14px; box-shadow: 0 2px 6px rgba(0,0,0,.03); }
-        .s1-ai2-left-top { padding: 10px 14px 14px; }
+        .s1-ai2-left-top { padding: 8px 12px 12px; }
         .s1-ai2-section-title { text-align: left; color: #003A70; font-size: 16px; font-weight: 900; margin-bottom: 10px; }
-        .s1-ai2-pain-item { display: grid; grid-template-columns: 110px 1fr 80px 1fr; align-items: center; padding: 18px 10px; border: 1px solid #CED4DA; border-radius: 12px; margin-bottom: 10px; background: #fff; }
-        .s1-ai2-pain-icon { width: 62px; height: 62px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 32px; margin-left: 6px; }
+        .s1-ai2-pain-item { display: grid; grid-template-columns: 94px 1fr 70px 1fr; align-items: center; padding: 10px 8px; border: 1px solid #CED4DA; border-radius: 12px; margin-bottom: 8px; background: #fff; }
+        .s1-ai2-pain-icon { width: 50px; height: 50px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 26px; margin-left: 4px; }
         .s1-ai2-red { color: #C92A2A; border: 3px solid #C92A2A; }
         .s1-ai2-orange { color: #E67700; border: 3px solid #E67700; }
         .s1-ai2-yellow { color: #E67700; border: 3px solid #E67700; }
-        .s1-ai2-pain-text h3 { font-size: 15px; font-weight: 900; margin-bottom: 8px; }
-        .s1-ai2-pain-text p { color: #212529; font-size: 15px; line-height: 1.7; font-weight: 700; }
+        .s1-ai2-pain-text h3 { font-size: 14px; font-weight: 900; margin-bottom: 4px; }
+        .s1-ai2-pain-text p { color: #212529; font-size: 13px; line-height: 1.5; font-weight: 700; }
         .s1-ai2-pain-red h3 { color: #C92A2A; }
         .s1-ai2-pain-orange h3 { color: #E67700; }
         .s1-ai2-pain-yellow h3 { color: #E67700; }
-        .s1-ai2-arr { display: flex; justify-content: center; align-items: center; color: #7A9CAE; font-size: 46px; }
-        .s1-ai2-sol-title { color: #003A70; font-size: 15px; font-weight: 900; margin-bottom: 8px; }
-        .s1-ai2-sol-desc { color: #212529; font-size: 15px; line-height: 1.7; font-weight: 700; }
+        .s1-ai2-arr { display: flex; justify-content: center; align-items: center; color: #7A9CAE; font-size: 36px; }
+        .s1-ai2-sol-title { color: #003A70; font-size: 14px; font-weight: 900; margin-bottom: 4px; }
+        .s1-ai2-sol-desc { color: #212529; font-size: 13px; line-height: 1.5; font-weight: 700; }
         .s1-ai2-bottom { margin-top: 14px; }
         .s1-ai2-road-title { text-align: center; color: #003A70; font-size: 18px; font-weight: 900; margin-bottom: 12px; }
         .s1-ai2-road-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
@@ -286,6 +286,23 @@ export default function SlideProject1() {
         .s1-ai2-table-card td { border: 1px solid #CED4DA; padding: 10px 8px; color: #212529; font-size: 14px; font-weight: 700; line-height: 1.5; text-align: center; }
         .s1-ai2-check { color: #2B8A3E; font-size: 22px; }
         .s1-ai2-plus { color: #003A70; font-size: 22px; }
+        /* 三步法 */
+        .s1-steps-main-title { text-align: left; color: #003A70; font-size: 16px; font-weight: 900; margin-bottom: 10px; }
+        .s1-steps-title-arrow { margin: 0 8px; font-size: 14px; vertical-align: middle; color: #00558B; }
+        .s1-steps-flow { display: flex; align-items: center; justify-content: center; gap: 16px; }
+        .s1-steps-card { width: 274px; min-height: 124px; border-radius: 16px; background: rgba(255,255,255,.92); border: 1.5px solid #CED4DA; box-shadow: inset 0 1px 0 rgba(255,255,255,.8), 0 4px 12px rgba(12,35,64,.04); padding: 16px 18px 14px; }
+        .s1-steps-card-head { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 12px; }
+        .s1-steps-num { font-size: 18px; font-weight: 900; line-height: 1; }
+        .s1-steps-num-one { color: #003A70; }
+        .s1-steps-num-two { color: #00558B; }
+        .s1-steps-num-three { color: #003A70; }
+        .s1-steps-title { font-size: 15px; font-weight: 800; line-height: 1.4; }
+        .s1-steps-title-one { color: #003A70; }
+        .s1-steps-title-two { color: #00558B; }
+        .s1-steps-title-three { color: #003A70; }
+        .s1-steps-desc { color: #495057; font-size: 13px; line-height: 1.5; font-weight: 700; text-align: left; }
+        .s1-steps-arrow { color: #495057; font-size: 38px; margin-top: -4px; flex-shrink: 0; }
+
         .s1-ai2-bottom-cases { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
         .s1-ai2-case-card { padding: 18px 22px; min-height: 220px; }
         .s1-ai2-case-wrap { display: flex; gap: 18px; align-items: flex-start; }
@@ -559,12 +576,61 @@ export default function SlideProject1() {
                       </div>
                     </div>
                   </div>
+                  {/* 三步法 */}
+                  <div style={{ height: 18 }}></div>
+                  <div className="s1-card" style={{ padding: '14px 18px' }}>
+                    <div className="s1-steps-main-title" style={{ marginBottom: 10 }}>
+                      三步法： 建立全局视图
+                      <span className="s1-steps-title-arrow">→</span>
+                      识别最大杠杆点
+                      <span className="s1-steps-title-arrow">→</span>
+                      数据量化验证效果
+                    </div>
+                    <div className="s1-steps-flow">
+                      <div className="s1-steps-card s1-steps-one" style={{ width: 'auto', flex: 1, minHeight: 110 }}>
+                        <div className="s1-steps-card-head">
+                          <div className="s1-steps-num s1-steps-num-one">01</div>
+                          <div className="s1-steps-title s1-steps-title-one">先摸清家底</div>
+                        </div>
+                        <div className="s1-steps-desc">
+                          梳理 23 个测试活动<br />量化耗时占比<br />
+                          建立测试活动全集
+                        </div>
+                      </div>
+                      <div className="s1-steps-arrow">
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </div>
+                      <div className="s1-steps-card s1-steps-two" style={{ width: 'auto', flex: 1, minHeight: 110 }}>
+                        <div className="s1-steps-card-head">
+                          <div className="s1-steps-num s1-steps-num-two">02</div>
+                          <div className="s1-steps-title s1-steps-title-two">识别聚焦痛点</div>
+                        </div>
+                        <div className="s1-steps-desc">
+                          筛选最费人力、高重复、最易出错<br />
+                          优先 AI 改造
+                        </div>
+                      </div>
+                      <div className="s1-steps-arrow">
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </div>
+                      <div className="s1-steps-card s1-steps-three" style={{ width: 'auto', flex: 1, minHeight: 110 }}>
+                        <div className="s1-steps-card-head">
+                          <div className="s1-steps-num s1-steps-num-three">03</div>
+                          <div className="s1-steps-title s1-steps-title-three">用数据说话</div>
+                        </div>
+                        <div className="s1-steps-desc">
+                          每项改造都用 before/after<br />
+                          数据验证：省多少时间、效率提升多少
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                {/* Right column */}
+                {/* Right column: AI能力全景图 + 单次迭代工时对比 */}
                 <div>
                   <div className="s1-card">
                     <div className="s1-card-title" style={{ textAlign: 'left' }}>
-                      <i className="fa-solid fa-table" style={{ marginRight: 6 }}></i>AI 能力全景图(部分)
+                      <i className="fa-solid fa-table" style={{ marginRight: 6 }}></i>AI 能力局部图
                     </div>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                       <thead>
@@ -583,7 +649,6 @@ export default function SlideProject1() {
                           ['self', 'PRD 澄清', '人工逐段阅读', '5min 快速识别', '70-80%', '10', '✅'],
                           ['self', '缺陷创建', '2-3min/个', '~1min/个', '50-60%', '9', '✅'],
                           ['self', '回归失败分析', '30+min/日', '7-8min/日', '~75%', '2', '✅'],
-                          // ['模型上下架标注', '手动逐个check', '批量一键标注', '80%+', '1', '✅'],
                           ['self', '测试用例生成', '2-3h/需求', '0.5-1h/需求', '80%', '11', '✅'],
                           ['other', '技术方案澄清', '人工逐段阅读', '5min 快速识别', '70-80%', '7', '✅'],
                         ].map((row, i) => (
