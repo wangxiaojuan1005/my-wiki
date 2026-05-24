@@ -97,8 +97,7 @@ export default function App() {
       {/* 顶部导航 (Top-Nav Bar matching index.css exactly) */}
       <div className="top-nav">
         <div className="logo">
-          <h1>王晓娟晋升答辩</h1>
-          {/* <p>LIVIS 理想同学 Quality Engineering &middot; AI Driven Testing</p> */}
+          <h1>王晓娟晋升答辩 <a href="https://li.feishu.cn/wiki/Mfo7wJ3lpiqysDksRqPcKto1nmd" target="_blank" rel="noopener noreferrer" style={{ fontSize: "14px", color: "#00558B", fontWeight: 600, marginLeft: "8px", textDecoration: "none", borderBottom: "1px solid #00558B" }}>飞书文档</a></h1>
         </div>
 
         {/* Dynamic Presentation Slide Tabs */}
