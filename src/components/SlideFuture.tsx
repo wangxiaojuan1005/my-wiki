@@ -364,7 +364,7 @@ export default function SlideFuture() {
                 <i className="fa-solid fa-bullseye"></i>
               </div>
               <div className="s5-goal-text">
-                把两个业务线的经验提炼为可教学、可复制的方法论，
+                把 3 个业务线的经验提炼为可教学、可复制的方法论，
                 将影响半径从"我做"扩展到"团队能用我的方法做"。
               </div>
             </div>
@@ -424,7 +424,7 @@ export default function SlideFuture() {
                     <div className="s5-step-icon">
                       <i className="fa-solid fa-shield-halved"></i>
                     </div>
-                    <div className="s5-step-title">livis App 质量体系深化</div>
+                    <div className="s5-step-title">LIVIS App 质量体系深化</div>
                   </div>
                   <ul>
                     <li>

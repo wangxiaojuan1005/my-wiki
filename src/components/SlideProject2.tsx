@@ -1046,7 +1046,7 @@ export default function SlideProject1() {
                   </div>
                 </div>
 
-                <div className="core-title">暴露反常现象 (部分)</div>
+                <div className="core-title">暴露反常现象 (部分，共记录45个问题)</div>
                 <div className="mini-box" style={{ marginTop: "12px", border: "1px solid #ffcccc", background: "#fff9f9" }}>
                   <ul style={{ listStyleType: "none", paddingLeft: "0", margin: "0", display: "flex", flexDirection: "column", gap: "10px" }}>
                     <li style={{ display: "flex", alignItems: "flex-start", gap: "8px", color: "#111827", fontSize: "15px", lineHeight: "1.6" }}>
@@ -1072,10 +1072,10 @@ export default function SlideProject1() {
                 <div className="pain-loop-box bg-white" style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                   <div className="pain-loop-title">测试资源枯竭</div>
                   <div className="pain-loop-area">
-                    <div className="pain-circle purple-circle pc1" style={{ background: "var(--mck-blue-bg)", borderColor: "var(--mck-blue-border)", color: "var(--mck-blue)" }}>组织架构紊乱</div>
+                    <div className="pain-circle purple-circle pc1" style={{ background: "var(--mck-blue-bg)", borderColor: "var(--mck-blue-border)", color: "var(--mck-blue)" }}>全量手工苦熬</div>
                     <div className="pain-circle orange-circle pc2">职责边界模糊</div>
-                    <div className="pain-circle orange-circle pc3">全量手工苦熬</div>
-                    <div className="pain-circle green-circle pc4">依赖实体硬件</div>
+                    <div className="pain-circle orange-circle pc3">依赖实车测试</div>
+                    <div className="pain-circle green-circle pc4">无测试分层</div>
                     <svg className="arrow-svg" viewBox="0 0 380 260">
                       <defs>
                         <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
@@ -1108,7 +1108,7 @@ export default function SlideProject1() {
             <div className="s2-content" style={{ gridTemplateColumns: "1.2fr 1fr" }}>
               {/* Column 1 */}
               <div className="s2-panel">
-                <div className="s2-panel-title">组织协作模式 Before / After 对比</div>
+                <div className="s2-panel-title">测试团队协作模式 Before / After 对比</div>
 
                 <div className="compare-grid">
                   <div className="s2-before">
@@ -1307,7 +1307,7 @@ export default function SlideProject1() {
                     <span className="summary-value" style={{ fontSize: "32px", color: "var(--mck-teal)", fontWeight: "800", fontFamily: "var(--font-mono)" }}>0</span>
                     <span style={{ fontSize: "14px", color: "var(--mck-navy)", fontWeight: "700" }}>台</span>
                   </div>
-                  <div className="summary-label" style={{ color: "var(--mck-navy)", fontSize: "13px", fontWeight: "600", marginTop: "2px" }}>自有自由测试车</div>
+                  <div className="summary-label" style={{ color: "var(--mck-navy)", fontSize: "13px", fontWeight: "600", marginTop: "2px" }}>自有测试车</div>
                 </div>
               </div>
 
@@ -1344,121 +1344,6 @@ export default function SlideProject1() {
             </div>
 
 
-
-            {/* Root Cause flow diagram */}
-            <div className="flow-area" style={{ marginTop: "20px" }}>
-              <div className="flow-title" style={{ marginBottom: "16px" }}>问题根因链路</div>
-
-              {/* Top row: cause chain */}
-              <div style={{ display: "flex", alignItems: "center", gap: "0", marginBottom: "18px" }}>
-                {[
-                  { text: "全量手工回归", color: "blue" },
-                  { text: "无分层策略", color: "blue" },
-                  { text: "端到端硬扛", color: "blue" },
-                  { text: "效率锁死", color: "red" },
-                  { text: "破局方向", color: "green" },
-                ].map((node, i, arr) => (
-                  <React.Fragment key={node.text}>
-                    <div style={{
-                      flex: "1",
-                      textAlign: "center",
-                      padding: "14px 8px",
-                      borderRadius: "10px",
-                      fontWeight: 800,
-                      fontSize: "16px",
-                      border: node.color === "red" ? "2px solid var(--mck-terracotta)" :
-                             node.color === "green" ? "2px solid var(--mck-teal)" :
-                             "2px solid var(--mck-blue-border)",
-                      color: node.color === "red" ? "var(--mck-terracotta)" :
-                             node.color === "green" ? "var(--mck-teal)" : "var(--mck-navy)",
-                      background: node.color === "red" ? "var(--mck-terracotta-bg)" :
-                                  node.color === "green" ? "var(--mck-teal-bg)" :
-                                  "var(--mck-blue-bg)",
-                    }}>
-                      {node.text}
-                    </div>
-                    {i < arr.length - 1 && (
-                      <div style={{ flexShrink: 0, width: "28px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                        <i className="fa-solid fa-arrow-right" style={{
-                          color: node.color === "red" ? "var(--mck-terracotta)" : "var(--mck-blue)",
-                          fontSize: "16px",
-                        }}></i>
-                      </div>
-                    )}
-                  </React.Fragment>
-                ))}
-              </div>
-
-              {/* Bottom row: detail nodes */}
-              <div style={{ display: "flex", alignItems: "flex-start", gap: "0" }}>
-                {/* Left side: problem details */}
-                <div style={{ flex: "2.5", display: "flex", flexDirection: "column", gap: "10px" }}>
-                  {/* Dashed connector indicator */}
-                  <div style={{ textAlign: "center", color: "var(--mck-blue-border)", fontSize: "12px", fontWeight: 600, marginBottom: "2px" }}>
-                    ⋮ 根因拆解 ⋮
-                  </div>
-                  <div style={{ display: "flex", gap: "10px" }}>
-                    <div style={{
-                      flex: "1",
-                      textAlign: "center",
-                      padding: "12px 10px",
-                      borderRadius: "8px",
-                      fontWeight: 600,
-                      fontSize: "13px",
-                      border: "1.5px solid var(--mck-blue-border)",
-                      color: "var(--mck-navy)",
-                      background: "#ffffff",
-                    }}>
-                      Feature / DailyBuild / 封板<br />三轮测试
-                    </div>
-                    <div style={{
-                      flex: "1",
-                      textAlign: "center",
-                      padding: "12px 10px",
-                      borderRadius: "8px",
-                      fontWeight: 600,
-                      fontSize: "13px",
-                      border: "1.5px solid var(--mck-blue-border)",
-                      color: "var(--mck-navy)",
-                      background: "#ffffff",
-                    }}>
-                      依赖实车 ｜ 无 Mock ｜ 无自动化
-                    </div>
-                  </div>
-                </div>
-
-                {/* Arrow from 效率锁死 → 破局方向 transition */}
-                <div style={{ flexShrink: 0, width: "28px", display: "flex", alignItems: "center", justifyContent: "center", marginTop: "6px" }}></div>
-
-                {/* Right side: solutions */}
-                <div style={{ flex: "3", display: "flex", flexDirection: "column", gap: "10px" }}>
-                  <div style={{ textAlign: "center", color: "var(--mck-teal)", fontSize: "12px", fontWeight: 600, marginBottom: "2px" }}>
-                    ▼ 解决方案 ▼
-                  </div>
-                  <div style={{ display: "flex", gap: "10px" }}>
-                    {[
-                      { text: "UI 自动化<br/>减少手工" },
-                      { text: "Mock<br/>解除硬依赖" },
-                      { text: "分层策略<br/>精准投入" },
-                    ].map((s) => (
-                      <div key={s.text} style={{
-                        flex: "1",
-                        textAlign: "center",
-                        padding: "14px 8px",
-                        borderRadius: "10px",
-                        fontWeight: 800,
-                        fontSize: "13px",
-                        border: "2px solid var(--mck-teal)",
-                        color: "var(--mck-teal)",
-                        background: "var(--mck-teal-bg)",
-                      }}
-                      dangerouslySetInnerHTML={{ __html: s.text }}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
 
             {/* Sub-section 2: 解除实车依赖方案 & UI 自动化方案 */}
             <div style={{ marginTop: "32px", borderTop: "2px solid #e2e8f0", paddingTop: "24px" }}>
@@ -1726,7 +1611,7 @@ export default function SlideProject1() {
                               <rect x="4" y="4" width="10" height="10"/>
                               <rect x="14" y="10" width="6" height="6"/>
                             </svg>
-                            真实车云(prod)
+                            真实车云
                           </span>
                           <span style={{ color: "var(--mck-teal-border)", fontSize: "11px" }}>+</span>
                           <span style={{ fontSize: "14px", fontWeight: 600, color: "var(--mck-navy)", display: "inline-flex", alignItems: "center", gap: "4px" }}>
@@ -1846,7 +1731,7 @@ export default function SlideProject1() {
                             L4
                           </span>
                           <span style={{ fontSize: "14px", fontWeight: 700, color: "var(--mck-terracotta)" }}>
-                            端侧紧急 Bugfix
+                           APP端侧紧急 Bugfix
                           </span>
                         </div>
                       </td>
@@ -1864,7 +1749,7 @@ export default function SlideProject1() {
                               <rect x="4" y="4" width="10" height="10"/>
                               <rect x="14" y="10" width="6" height="6"/>
                             </svg>
-                            真实车云(prod)
+                            真实车云
                           </span>
                           <span style={{ color: "var(--mck-terracotta-border)", fontSize: "11px" }}>+</span>
                           <span style={{ fontSize: "14px", fontWeight: 600, color: "var(--mck-navy)", display: "inline-flex", alignItems: "center", gap: "4px" }}>
@@ -1872,7 +1757,7 @@ export default function SlideProject1() {
                               <path d="M12 2l8 4-8 4-8-4z"/>
                               <path d="M4 6v8l8 4 8-4V6"/>
                             </svg>
-                            Mock 车机(prod)
+                            Mock 车机端
                           </span>
                         </div>
                       </td>
@@ -1922,7 +1807,7 @@ export default function SlideProject1() {
               }}>
                 <div style={{ fontSize: "18px", fontWeight: 800, color: "var(--mck-navy)", marginBottom: "20px", display: "flex", alignItems: "center", gap: "8px" }}>
                   <span style={{ fontSize: "18px" }}>📅</span>
-                  <span>自动化推进路线与时间线</span>
+                  <span>测试提效推进路线与时间线</span>
                 </div>
 
                 <div style={{ position: "relative", flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between", paddingLeft: "8px" }}>
@@ -2112,7 +1997,7 @@ function FlowchartBoard() {
             align-items:center;
             justify-content:center;
             flex-direction:column;
-            font-size:14px;
+            font-size:16px;
             line-height:1.55;
             color: var(--mck-navy) !important;
             z-index:2;
@@ -2248,7 +2133,7 @@ function FlowchartBoard() {
             display:flex;
             align-items:center;
             justify-content:center;
-            font-size:13px;
+            font-size:14px;
             font-weight:700;
             width:130px;
             height:42px;
@@ -2285,13 +2170,13 @@ function FlowchartBoard() {
         }
 
         .f-txt {
-            font-size:13px;
+            font-size:14px;
             fill: var(--mck-slate) !important;
             font-weight: 500;
         }
 
         .f-txt-red {
-            font-size:13px;
+            font-size:14px;
             fill: var(--mck-terracotta) !important;
             font-weight: 800;
         }

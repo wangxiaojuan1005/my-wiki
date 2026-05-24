@@ -46,7 +46,7 @@ export default function AICognitionCanvas() {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 600;
           line-height: 1.4;
           z-index: 2;
@@ -61,7 +61,7 @@ export default function AICognitionCanvas() {
         }
 
         .ai-matrix-container .small {
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 500;
         }
 
@@ -69,7 +69,7 @@ export default function AICognitionCanvas() {
           background: var(--mck-navy, #0c2340);
           border: 3px solid var(--mck-blue, #1d70b8);
           color: #fff;
-          font-size: 22px;
+          font-size: 24px;
           font-weight: 700;
           box-shadow: 0 6px 12px rgba(12, 35, 64, 0.2);
         }
@@ -82,7 +82,7 @@ export default function AICognitionCanvas() {
           background: var(--mck-teal-bg, #edf6f1);
           border: 2px solid var(--mck-teal, #127743);
           color: var(--mck-teal, #127743);
-          font-size: 20px;
+          font-size: 22px;
           font-weight: 700;
           box-shadow: 0 4px 10px rgba(18, 119, 67, 0.1);
         }
@@ -95,7 +95,7 @@ export default function AICognitionCanvas() {
           background: var(--mck-terracotta-bg, #fcf4f2);
           border: 2px solid var(--mck-terracotta, #be4d38);
           color: var(--mck-terracotta, #be4d38);
-          font-size: 20px;
+          font-size: 22px;
           font-weight: 700;
           box-shadow: 0 4px 10px rgba(190, 77, 56, 0.15);
         }
@@ -130,7 +130,7 @@ export default function AICognitionCanvas() {
           transform: translate(-50%, -50%) rotate(-45deg);
           text-align: center;
           color: #fff;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 700;
           line-height: 1.6;
         }
@@ -156,7 +156,7 @@ export default function AICognitionCanvas() {
 
         .ai-matrix-container .label {
           position: absolute;
-          font-size: 14px;
+          font-size: 15px;
           color: var(--mck-navy, #0c2340);
           font-weight: 700;
           z-index: 3;

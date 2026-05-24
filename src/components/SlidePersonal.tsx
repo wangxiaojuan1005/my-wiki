@@ -307,7 +307,7 @@ export default function SlidePersonal() {
 
                     <div className="sp-radar">
                       <div className="sp-radar-fill"></div>
-                      <div className="sp-radar-center">7 维度</div>
+                      <div className="sp-radar-center">6维度</div>
                     </div>
 
                   </div>

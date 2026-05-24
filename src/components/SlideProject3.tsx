@@ -84,7 +84,7 @@ export default function SlideProject3() {
             <div className="border border-[#CED4DA] rounded-[10px] bg-white">
               <div className="p-4 pt-[14px]">
                 <div className="text-[#003A70] font-extrabold text-[15px] leading-normal mb-2.5">
-                  7 维度体系不是凭空设计，遵循"先摸清输入、再结合约束、后收敛方案"的推导路径：
+                  多维度体系不是凭空设计，遵循"先摸清输入、再结合约束、后收敛方案"的推导路径：
                 </div>
 
                 {/* Step 1 */}
@@ -134,7 +134,7 @@ export default function SlideProject3() {
                     </div>
                   </div>
                   <div className="border border-[#CED4DA] rounded-lg min-h-[78px] bg-white p-3 flex items-center text-[15px] leading-relaxed font-semibold">
-                    将业内方案与团队约束交叉比对，收敛为7 维度加权评分体系
+                    将业内方案与团队约束交叉比对，收敛为多维度加权评分体系
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function SlideProject3() {
               {/* Left 50%: 7-Dimension Table */}
               <div className="border border-[#CED4DA] rounded-[10px] bg-white p-2.5">
                 <div className="text-center text-[#003A70] font-black text-[15px] mb-2">
-                  7 维度加权评分体系（ A–F六级分类 ）
+                  多维度加权评分体系（ A–E六级分类 ）
                 </div>
                 <table className="w-full border-collapse text-[15px]">
                   <thead>
@@ -209,9 +209,9 @@ export default function SlideProject3() {
                     <tr>
                       <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">
                         <span className="w-5 h-5 rounded-full bg-[#003A70] text-white inline-flex items-center justify-center text-[11px] mr-2 font-extrabold">7</span>
-                        7 维度综合评级
+                        多维度综合评级
                       </td>
-                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">上述维度加权评分，输出 A–F 六级分类</td>
+                      <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">上述维度加权评分，输出 A–E 六级分类</td>
                       <td className="p-2 border border-[#CED4DA] align-top leading-relaxed">差异化检查策略，按级管理</td>
                     </tr>
                   </tbody>
@@ -369,7 +369,7 @@ export default function SlideProject3() {
               已接入 OpenClaw 市场，评估 Skill 数量 465 个
             </div>
             <div className="flex-1 bg-[#003A70] text-white flex items-center justify-center font-extrabold text-[15px]">
-              针对 256 个 Skill 进行跟踪，发现 22 个 Skill 质量在变好，尤其是 F 不合格 → A 通过的变化
+              针对 256 个 Skill 进行跟踪，发现 22 个 Skill 质量在变好，尤其是 D 不合格 → A 优秀的变化
             </div>
           </div>
         </div>
@@ -393,7 +393,7 @@ export default function SlideProject3() {
                 <Users className="w-10 h-10 text-[#003A70]" />
               </div>
               <div className="flex-1 text-[#003A70] text-[15px] leading-[2] font-bold">
-                AI 提效不能靠单打独斗。很多一线测试同学扎根业务，对外界 AI 感知不明显，仍然采用传统硬基方案做事。<br />
+                AI 提效不能靠单打独斗。很多一线测试同学扎根业务，对外界 AI 感知不明显，仍然采用传统碳基方案做事。<br />
                 如果不主动拉齐，意识未跟上的人会被加速淘汰，团队整体能力也会出现断层。
               </div>
             </div>
@@ -432,7 +432,7 @@ export default function SlideProject3() {
                   <ArrowDown className="w-[52px] h-[52px] inline" />
                 </div>
                 <div className="text-[#003A70] text-[15px] leading-[1.9] font-bold px-5">
-                  团队同学从 "知道 AI 能做什么" 升级为 "主动探索识别业务场景，用AI改造"
+                  团队同学从 "知道 AI 能做什么" 升级为 "主动探索识别业务场景，用AI改造"，团队共计涌现出35个AI优秀实践
                 </div>
               </div>
             </div>

@@ -431,22 +431,22 @@ export default function SlideProject1() {
         <div className="s1-section">
           <div className="s1-sec-header">
             <div className="s1-sec-idx">1</div>
-            效率线：解决"快" —— 释放人力，拉高单人吞吐上限
+            效率线：解决"快" — 释放人力，拉高单人吞吐上限
           </div>
           <div className="s1-sec-body">
 
             {/* Step 1: 自动化建设 */}
             <div className="s1-stage">
-              <div className="s1-stage-title">第一步：自动化建设 —— 释放手工回归</div>
+              <div className="s1-stage-title">第一步：自动化建设 - 释放手工回归</div>
               <div className="s1-grid-3">
                 {/* Left: Pain Points */}
                 <div className="s1-card">
-                  <div className="s1-card-title s1-red">核心痛点（AI 触发前）</div>
+                  <div className="s1-card-title s1-red">核心痛点（AI之前）</div>
                   <div className="s1-item">
                     <div className="s1-item-icon"><i className="fa-regular fa-clock s1-red"></i></div>
                     <div>
                       <div className="s1-item-title s1-red">手工回归不可持续</div>
-                      <div className="s1-item-desc">每天比 1:8，回归占据窗口期大部分时间，大量人力被重复占用</div>
+                      <div className="s1-item-desc">回归占据窗口期大部分时间，大量人力被重复占用</div>
                     </div>
                   </div>
                   <div className="s1-item">
@@ -509,7 +509,7 @@ export default function SlideProject1() {
 
             {/* Step 2: AI 全链路改造 */}
             <div className="s1-ai2-section">
-              <div className="s1-ai2-title">第二步： AI 全链路改造 —— 拉高单人吞吐上限（大模型能力拐点驱动测试全链路升级）</div>
+              <div className="s1-ai2-title">第二步： AI 全链路改造 - 多阶段提效</div>
               <div className="s1-ai2-sub"><br/></div>
               <div className="s1-ai2-content">
                 {/* Left column */}
@@ -541,7 +541,7 @@ export default function SlideProject1() {
                       </div>
                       <div className="s1-ai2-arr"><i className="fa-solid fa-arrow-right"></i></div>
                       <div>
-                        <div className="s1-ai2-sol-title">AI 生成能力</div>
+                        <div className="s1-ai2-sol-title">AI 理解 + 生成能力</div>
                         <div className="s1-ai2-sol-desc">按模板 + 上下文填充<br/>一键生成 + 人工确认</div>
                       </div>
                     </div>
@@ -554,7 +554,7 @@ export default function SlideProject1() {
                       </div>
                       <div className="s1-ai2-arr"><i className="fa-solid fa-arrow-right"></i></div>
                       <div>
-                        <div className="s1-ai2-sol-title">AI 理解 + 生成双能力</div>
+                        <div className="s1-ai2-sol-title">AI 理解 + 生成能力</div>
                         <div className="s1-ai2-sol-desc">理解业务场景 + 结构化输出<br/>天级 → 小时级（用例生成）</div>
                       </div>
                     </div>
@@ -564,11 +564,12 @@ export default function SlideProject1() {
                 <div>
                   <div className="s1-card">
                     <div className="s1-card-title" style={{ textAlign: 'left' }}>
-                      <i className="fa-solid fa-table" style={{ marginRight: 6 }}></i>AI 能力全景图
+                      <i className="fa-solid fa-table" style={{ marginRight: 6 }}></i>AI 能力全景图(部分)
                     </div>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
                       <thead>
                         <tr style={{ background: '#003A70', color: '#fff' }}>
+                          <th style={{ border: '1px solid #d7e2f1', padding: 9, fontWeight: 800, width: 52 }}>来源</th>
                           <th style={{ border: '1px solid #d7e2f1', padding: 9, fontWeight: 800 }}>AI 能力</th>
                           <th style={{ border: '1px solid #d7e2f1', padding: 9, fontWeight: 800 }}>改造前</th>
                           <th style={{ border: '1px solid #d7e2f1', padding: 9, fontWeight: 800 }}>改造后</th>
@@ -579,17 +580,23 @@ export default function SlideProject1() {
                       </thead>
                       <tbody>
                         {[
-                          ['PRD 澄清', '人工逐段阅读', '5min 快速识别', '70-80%', '10', '✅'],
-                          ['缺陷创建', '2-3min/个', '~1min/个', '50-60%', '9', '✅'],
-                          ['回归失败分析', '30+min/日', '7-8min/日', '~75%', '2', '✅'],
-                          ['模型上下架标注', '手动逐个check', '批量一键标注', '80%+', '', '✅'],
-                          ['测试用例生成', '2-3h/需求', '0.5-1h/需求', '80%', '11', '✅'],
-                          ['技术方案澄清', '人工逐段阅读', '5min 快速识别', '70-80%', '7', '✅'],
+                          ['self', 'PRD 澄清', '人工逐段阅读', '5min 快速识别', '70-80%', '10', '✅'],
+                          ['self', '缺陷创建', '2-3min/个', '~1min/个', '50-60%', '9', '✅'],
+                          ['self', '回归失败分析', '30+min/日', '7-8min/日', '~75%', '2', '✅'],
+                          // ['模型上下架标注', '手动逐个check', '批量一键标注', '80%+', '1', '✅'],
+                          ['self', '测试用例生成', '2-3h/需求', '0.5-1h/需求', '80%', '11', '✅'],
+                          ['other', '技术方案澄清', '人工逐段阅读', '5min 快速识别', '70-80%', '7', '✅'],
                         ].map((row, i) => (
                           <tr key={i}>
                             {row.map((cell, j) => (
                               <td key={j} style={{ border: '1px solid #d7e2f1', padding: 9, textAlign: 'center', fontWeight: 700, color: '#374151' }}>
-                                {j === 3 ? <span className={cell.includes('70') || cell.includes('80') ? 's1-green-text' : 's1-orange-text'}>{cell}</span> : cell}
+                                {j === 0 ? (
+                                  cell === 'self' ? (
+                                    <i className="fa-solid fa-user" style={{ color: '#003A70', fontSize: 16 }} title="自主实现"></i>
+                                  ) : (
+                                    <i className="fa-solid fa-user-group" style={{ color: '#AE2F23', fontSize: 16 }} title="他人实现"></i>
+                                  )
+                                ) : j === 4 ? <span className="s1-green-text">{cell}</span> : cell}
                               </td>
                             ))}
                           </tr>
