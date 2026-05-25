@@ -498,7 +498,7 @@ export default function SlideProject1() {
                   <div className="s1-compare">
                     <div className="s1-compare-box">
                       <i className="fa-solid fa-user" style={{ color: '#003A70' }}></i>
-                      <div className="s1-compare-list">• 重复劳动多<br/>• 易疲劳 • 漏检风险高</div>
+                      <div className="s1-compare-list">• 重复劳动多<br/>• 漏检风险高</div>
                     </div>
                     <div className="s1-arrow">→</div>
                     <div className="s1-compare-box">
@@ -828,7 +828,7 @@ export default function SlideProject1() {
                   <div className="s1-qz-card s1-qz-green">
                     <div className="s1-qz-icon-w"><IconCompass size={48} /></div>
                     <div className="s1-qz-content">
-                      <div className="s1-qz-title">结果：故障等级 + 逃逸率</div>
+                      <div className="s1-qz-title">结果：故障 + 逃逸率</div>
                       <div className="s1-qz-desc">验证每一版交付的最终质量结果，趋势对比看改进效果</div>
                     </div>
                   </div>

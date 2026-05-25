@@ -424,7 +424,7 @@ export default function SlideFuture() {
                     <div className="s5-step-icon">
                       <i className="fa-solid fa-shield-halved"></i>
                     </div>
-                    <div className="s5-step-title">LIVIS App 质量体系深化</div>
+                    <div className="s5-step-title">LIVIS APP 质量体系深化</div>
                   </div>
                   <ul>
                     <li>

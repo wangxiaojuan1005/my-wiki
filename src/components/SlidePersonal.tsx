@@ -74,7 +74,7 @@ export default function SlidePersonal() {
                 <div style={{ fontSize: "32px", fontWeight: 900, color: "#003A70", flexShrink: 0 }}>核心定位</div>
 
                 <div style={{ fontSize: "18px", lineHeight: "1.6", color: "#495057", fontWeight: 700 }}>
-                  融合云 & AgentOps业务线的<span style={{ color: "#C92A2A" }}>核心质量 Owner</span>，LIVIS理想汽车App 质量体系<span style={{ color: "#C92A2A" }}>从 0 到 1 的唯一建设者</span>。
+                  融合云 & AgentOps业务线的<span style={{ color: "#C92A2A" }}>核心质量 Owner</span>，LIVIS理想汽车APP 质量体系<span style={{ color: "#C92A2A" }}>从 0 到 1 的唯一建设者</span>。
                 </div>
 
               </section>

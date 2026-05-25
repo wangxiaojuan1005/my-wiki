@@ -1102,7 +1102,7 @@ export default function SlideProject1() {
         <div className="section">
           <div className="section-header">
             <div className="section-index">2</div>
-            <div className="section-title">第一板斧：扎稳底盘，建立流程规则与需求边界隔离 (破局 L2)</div>
+            <div className="section-title">第一板斧：扎稳底盘</div>
           </div>
           <div className="section-content">
             <div className="s2-content" style={{ gridTemplateColumns: "1.2fr 1fr" }}>
@@ -1242,7 +1242,7 @@ export default function SlideProject1() {
                 }}>⏱️</div>
                 <div>
                   <div style={{ display: "flex", alignItems: "baseline", gap: "4px" }}>
-                    <span className="summary-value" style={{ fontSize: "32px", color: "var(--mck-blue)", fontWeight: "800", fontFamily: "var(--font-mono)" }}>15</span>
+                    <span className="summary-value" style={{ fontSize: "32px", color: "var(--mck-blue)", fontWeight: "800", fontFamily: "var(--font-mono)" }}>15+</span>
                     <span style={{ fontSize: "14px", color: "var(--mck-navy)", fontWeight: "700" }}>天</span>
                   </div>
                   <div className="summary-label" style={{ color: "var(--mck-navy)", fontSize: "13px", fontWeight: "600", marginTop: "2px" }}>无人泊车测试周期</div>
@@ -1276,7 +1276,7 @@ export default function SlideProject1() {
                     <span className="summary-value" style={{ fontSize: "32px", color: "var(--mck-terracotta)", fontWeight: "800", fontFamily: "var(--font-mono)" }}>33</span>
                     <span style={{ fontSize: "14px", color: "var(--mck-navy)", fontWeight: "700" }}>天/月+</span>
                   </div>
-                  <div className="summary-label" style={{ color: "var(--mck-navy)", fontSize: "13px", fontWeight: "600", marginTop: "2px" }}>手动回归时间浪费</div>
+                  <div className="summary-label" style={{ color: "var(--mck-navy)", fontSize: "13px", fontWeight: "600", marginTop: "2px" }}>手动回归时间</div>
                 </div>
               </div>
 
@@ -1846,7 +1846,7 @@ export default function SlideProject1() {
                     <div>
                       <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "2px" }}>
                         <span style={{ fontSize: "11px", height: "18px", padding: "0 8px", background: "#e6f4ea", color: "#10b981", borderRadius: "10px", fontWeight: 600, display: "inline-flex", alignItems: "center" }}>已完成</span>
-                        <span style={{ fontSize: "11px", color: "gray" }}>5月中旬</span>
+                        <span style={{ fontSize: "11px", color: "gray" }}>5月初</span>
                       </div>
                       <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#08154c", margin: 0 }}>核心痛点与方案调研</h4>
                     </div>
@@ -1876,7 +1876,7 @@ export default function SlideProject1() {
                     <div>
                       <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "2px" }}>
                         <span style={{ fontSize: "11px", height: "18px", padding: "0 8px", background: "#e6f4ea", color: "#10b981", borderRadius: "10px", fontWeight: 600, display: "inline-flex", alignItems: "center" }}>已完成</span>
-                        <span style={{ fontSize: "11px", color: "gray" }}>5月下旬</span>
+                        <span style={{ fontSize: "11px", color: "gray" }}>5月中旬</span>
                       </div>
                       <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#08154c", margin: 0 }}>与研发评审方案可行性与潜在漏洞</h4>
                     </div>
